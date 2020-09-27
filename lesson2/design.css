@@ -1,0 +1,79 @@
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+.head {
+
+background-color: pink;
+color: white;
+padding: 50px;
+text-align: center;
+align-items: center;
+align-content: center; 
+}
+h1 {
+    font-size: 2em;
+}
+
+.please {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 10px; 
+}
+
+.column1 {
+    grid-column: 1/2;
+    text-align: center;
+    align-content: center;
+    align-items: center; 
+    padding: 10px; 
+    background-color: gainsboro;
+}
+.column2 {
+    text-align: center;
+    align-content: center;
+    align-items: center; 
+    grid-column: 2/3;
+    padding: 10px;
+    background-color: gainsboro;
+}
+.column3 {
+    text-align: center;
+    align-content: center;
+    align-items: center; 
+    grid-column: 3/4;
+    padding: 10px;
+    background-color: gainsboro;
+}
+
+.glossier {
+
+   width: 100%;
+}
+
+p {
+
+    font-size: 1.3em;
+}
+
+.annoying {
+
+    text-align: left;
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 600px) {
+    .column2 {
+      display: none;
+    }
+    .column3 {
+        display: none;
+      }
+  }
+  @media only screen and (max-width: 600px) {
+    
+    .column1 {
+      width: 100%;
+    }
+  }
