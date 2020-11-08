@@ -1,0 +1,44 @@
+body {
+    width: 500px; 
+    margin: auto; 
+    justify-content: center;
+    align-items: center; 
+    margin-top: 100px; 
+}
+
+table {
+    margin: auto;
+    background-color: lightgrey; 
+    text-align: center; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+td {
+
+    padding: 5px;
+
+}
+
+.top {
+background-color: #7fb9c2; 
+font-size: 200%; 
+padding: 10px; 
+}
+
+.foot {
+background-color: #7fb9c2; 
+}
+
+.b {
+background-color: #628ca6;
+color: white; 
+
+}
+
+.normal {
+    background-color:  #e7f0ed; 
+}
+
+.green {
+    background-color: #e7ffed; 
+}
