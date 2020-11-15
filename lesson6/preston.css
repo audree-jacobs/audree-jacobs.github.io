@@ -93,3 +93,32 @@ form {
     border: none; 
 
 }
+
+.divpic {
+
+    display: inline;
+    width: 200px;
+    float: right; 
+
+}
+
+.prestondiv {
+
+    width: 80%;
+    margin:auto;
+    padding: 10px;
+}
+
+.fishhavendiv {
+
+    width: 80%;
+    margin:auto;
+    padding: 10px;
+}
+
+.sodadiv {
+
+    width: 80%;
+    margin:auto;
+    padding: 10px;
+}
