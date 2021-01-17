@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <title>Storm Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/lesson6/preston.css"> 
+  
+</head>
+<body>
+    <header>
+        <img src="/lesson3/weather logo.png"> 
+        <h1> Local Idaho Weather Information Center </h1>
+        <p>  </p> 
+
+        <ul class="nav">
+            <li> <a href="index.html"> Home </a></li> 
+            <li> <a href="preston-5.html"> Preston </a></li>
+            <li> <a href="index.html"> Soda Springs </a></li>
+            <li> <a href="index.html"> Fish Haven </a></li>
+            <li> <a href="index.html"> Storm Center </a></li>
+            <li> <a href="index.html"> Gallery </a></li>
+              </ul>
+            
+    </header>
+   
+    <h2> Report a Storm </h2>
+ <form target="_blank">
+    <label for="fname">Full Name:</label><br>
+    <input type="text" id="fname" required> <br>
+    
+    <br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" placeholder="abc@gmail.com"> <br>
+    
+    <br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" required> <br>
+
+    <br>
+
+    <label for="zip">Zip Code:</label><br>
+    <input type="number" id="zip" required> <br>
+
+    <br>
+
+    <label for="date">Storm Date:</label><br>
+    <input type="date" id="date" > <br>
+
+    <br>
+
+    <datalist id="types">
+        <option value="Flash Flood">
+        <option value="Hail">
+        <option value="Hurricane">
+        <option value="Thunderstorm">
+        <option value="Tornado">
+    </datalist>
+
+    <br>
+
+    <label for="type">Storm Type:</label><br>
+    <input list="types" id="type"> <br>
+
+    <br>
+
+    <label for="sev">Storm Severity:</label>
+    <input type="text" id="textInput" value=""><br>
+    <input type="range" id="sev" min="0" max="10" onchange="updateTextInput(this.value);">
+     <br>
+     <br>
+
+    <label for="region">Storm Region:</label><br>
+    <select name="cars" id="region" form="carform">
+    <option style="display:none" value="Select Region">Select Region: </option>
+    <option value="Preston"> Preston</option>
+    <option value="Soda Springs">Soda Springs</option>
+    <option value="Fish Haven">Fish Haven</option>
+    </select>  <br>
+
+    <br>
+
+    <label for="danger">User in Danger:</label><br>
+    <label for="yes">Yes</label>
+    <input type="radio" id="yes"  value="Yes"> 
+    <label for="no">No</label>
+    <input type="radio" id="no" value="No"> 
+    <label for="maybe">Maybe</label>
+    <input type="radio" id="maybe" value="Maybe"> <br> 
+
+    <br>
+
+    <label for="comment">Additional Information or Comments:</label> <br>
+    <textarea id="comment" rows="4" cols="50">
+    </textarea> <br>
+    
+    <br>
+
+    <input onclick="window.location.href = '/lesson8/thankyou.html'" type="submit" value="submit" >
+
+    
+ </form>
+
+
+
+ 
+   <footer style="background-color:lightyellow; padding:40px;"> 
+     <p> @ Local Idaho Weather Information Center | Audrey Jacobs | Saturday, 17 October 2020 </p>
+ 
+   </footer>
+ 
+    
+<script>
+
+function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+        }
+
+</script>
+
+</body>
+</html>  

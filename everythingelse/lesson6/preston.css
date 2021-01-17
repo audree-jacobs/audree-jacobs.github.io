@@ -1,0 +1,204 @@
+body {
+    width:90%; 
+    margin:auto;
+}
+
+header {
+    
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    background-color:lightyellow; 
+    padding:50px;
+}
+
+img {
+
+    width: 20%;
+    float: right; 
+    margin-bottom: 50px;
+    margin-top: -50px;
+    
+}
+
+.prestonboxes {
+
+    background-color: gainsboro;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+h2 {
+
+text-align: center; 
+font-size: 2em; 
+
+}
+
+footer {
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+
+}
+
+
+.nav {
+
+    width: 100%;
+    margin:auto;
+    background-color: orange; 
+    padding: 10px;
+}
+
+.nav li {
+    margin:auto; 
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 10px;
+    padding-right: 10px; 
+    color: white;
+    background-color: orange; 
+}
+
+.nav li a {
+
+    text-decoration: none;
+    color: white; 
+}
+.preston {
+
+    display: inline;
+    margin: auto;
+    padding: 10px; 
+    width: 300px; 
+}
+
+form {
+
+    margin:auto; 
+    width: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+}
+
+#textInput {
+
+    width: 20px;
+    border: none; 
+
+}
+
+
+.prestondiv {
+
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto, auto;
+    background-color: lightpink; 
+
+}
+
+
+.fishavendiv {
+
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto, auto;
+    background-color: lightskyblue; 
+}
+
+.sodadiv {
+
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto, auto;
+    background-color: lightsalmon; 
+}
+
+.divpic {
+
+    display: grid;
+    width: 200px;
+    grid-column: 2/3;
+    margin: none; 
+
+}
+
+h3 {
+    display: grid;
+    grid-column: 1/2; 
+
+}
+
+.subtext {
+
+    display: grid;
+    grid-column: 1/2; 
+
+}
+
+@media only screen and (max-width: 600px) {
+
+ body {
+     
+ }
+ .prestondiv {
+    width: 70%;
+    margin:auto;
+    background-color: lightpink;
+    display: grid;
+    grid-template-rows: auto, auto;
+    align-items: center;
+    justify-items: center;
+ }
+ .sodadiv{
+    width:70%;
+    margin:auto;
+    background-color: lightpink;
+    display: grid;
+    grid-template-rows: auto, auto;
+    align-items: center;
+    justify-items: center;
+ }
+ .fishavendiv{
+    width: 70%;
+    margin:auto;
+    background-color: lightpink;
+    display: grid;
+    grid-template-rows: auto, auto;
+    align-items: center;
+    justify-items: center; 
+ }
+ h3 {
+    display: grid;  
+     grid-row: 1/2;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ .subtext {
+    display: grid;  
+    grid-row: 1/2;
+    margin-top: 30px;
+    margin-bottom: 10px;
+ }
+ .divpic {
+    display: grid;  
+    grid-row: 2/3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+}
