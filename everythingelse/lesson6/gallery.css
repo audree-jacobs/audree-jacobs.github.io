@@ -1,0 +1,104 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    max-width: 100%;
+  }
+  
+  h1 {
+    font-style: italic;
+    color: #373fff;
+  }
+  
+  /*
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    
+    .images {
+      
+      grid-template-rows: 280px 280px 280px 280px 280px 280px 280px;
+      
+    }
+    
+  }
+  
+  @media screen and (min-width: 376px) and (max-width: 768px) {
+    
+    .images {
+      
+      grid-template-rows: 180px 180px 180px 180px 180px 180px 180px;
+      
+    }
+    
+    body {
+      
+      background-color: black; 
+      
+    }
+    
+  }
+  */
+  
+  
+  .images {
+    height: 1em; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 280px 280px 280px 280px 280px 280px 280px;*/
+    grid-template-rows: content; 
+    grid-gap: 10px;
+  }
+  
+  .one {
+    display: block;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  
+  .two {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .three {
+    max-width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .four {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .five {
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  .six {
+    max-width: 100%;
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
+  .seven {
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+  .eight {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .nine {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .ten {
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 5/7;
+  }
+  
