@@ -1,0 +1,60 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+  }
+  
+  h1 {
+    font-style: italic;
+    color: #373fff;
+  }
+  
+  .loading {
+    
+    background-color: gray;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 300px;
+    position: relative; 
+    
+  }
+
+  .column {
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .placeholder-loading {
+    
+    display: inline-block; 
+    position: relative; 
+    overflow: hidden;
+    grid-column: 1/2; 
+    
+    
+  }
+  
+  .placeholder-loading::before {
+    
+    content:"";
+    display: block;
+    position: absolute;
+    left:-400px;
+    top:0px;
+    height: 100%;
+    width: 400px; 
+    background: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%);
+    animation: load 3s;
+    z-index: 50;
+    
+  }
+  
+  @keyframes load {
+    0% {
+      left:-400px;
+    }
+    100%{
+      left:100%;
+    }
+    
+  }
