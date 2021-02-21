@@ -1,0 +1,509 @@
+
+
+@media only screen and (max-width: 600px) {
+
+  .box {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px; 
+    margin: auto; 
+    text-align: center;
+    justify-content: center;
+    align-content: center; 
+    margin-bottom: 20px;
+  
+  }
+
+  .first {
+    font-size: 2em; 
+    position: relative;
+    z-index: 2;
+    display: inline;
+    color: rgba(3, 3, 3, 0.616);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .second {
+    position: relative;
+    z-index: 2;
+    display: inline;
+    color: rgba(3, 3, 3, 0.616);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+  }
+
+  .desc {
+    
+    display: none; 
+  }
+  
+
+}
+
+@media only screen and (min-width: 600px)  {
+
+
+  .box {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; 
+    margin: auto; 
+    text-align: center;
+    justify-content: center;
+    align-content: center; 
+  
+  }
+  .first {
+    position: relative;
+    z-index: 2;
+    display: inline;
+    font-size: 2em;
+    color: rgba(3, 3, 3, 0.616);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  }
+
+  .second {
+    position: relative;
+    z-index: 2;
+    display: inline;
+    font-size: 2em;
+    color: rgba(3, 3, 3, 0.616);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .desc {
+    display: none; 
+  }
+  
+}
+
+@media only screen and (min-width: 768px) {
+
+  .box {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px; 
+    margin: auto; 
+    text-align: center;
+    justify-content: center;
+    align-content: center; 
+  
+  }
+
+  .first {
+    position: relative;
+    z-index: 2;
+    display: inline;
+    font-size: 4em;
+    color: rgba(3, 3, 3, 0.616);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .second {
+    position: relative;
+    z-index: 2;
+    display: inline;
+    font-size: 4em;
+    color: rgba(3, 3, 3, 0.616);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .desc {
+
+    display: block; 
+
+  }
+  
+  .placeholder-loading:hover {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+}
+
+
+
+
+.loading {
+    
+  background-color: gray;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 300px;
+  position: relative; 
+  min-width: 100%; 
+  
+}
+
+
+
+.weather_gallery {
+  text-align: center; 
+  margin:auto; 
+  padding: 40px; 
+  font-size: 3em; 
+  color: rgba(3, 3, 3, 0.616);
+}
+
+.column {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px; 
+   
+}
+
+.column2 {
+
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-gap: 10px; 
+  
+}
+
+.column3 {
+
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-gap: 10px; 
+  
+}
+
+.placeholder-loading {
+  
+  display: inline-block; 
+  position: relative; 
+  overflow: hidden;
+  grid-column: 1/2; 
+  
+  
+}
+
+.placeholder-loading::before {
+  
+  content:"";
+  display: block;
+  position: absolute;
+  left:-400px;
+  top:0px;
+  height: 100%;
+  width: 400px; 
+  background: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%);
+  animation: load 3s;
+  z-index: 50;
+  
+}
+
+@keyframes load {
+  0% {
+    left:-400px;
+  }
+  100%{
+    left:100%;
+  }
+  
+}
+
+body {
+    width: 100%;
+    align-content: center;
+}
+
+header {
+
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding-top: 70px;
+    padding-bottom: 10px;
+     
+}
+
+h1 {
+    z-index: 2;
+}
+
+.prestonboxes {
+
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    padding: 40px;
+
+}
+
+.clouds {
+
+    width: 100%;
+    display: inline;
+    position: relative;
+    z-index: 1;
+    margin-top: -360px;
+    margin-bottom: -13px;
+
+}
+
+h2 {
+
+    padding-top: 40px; 
+    padding-bottom: 20px;
+    width: 80%;
+    margin:auto; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    font-size: 3em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.nav {
+
+    max-width: 100%;
+    margin-top: -100px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.nav li {
+    margin-top: -50px;
+    margin: auto;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav li a {
+    margin: auto;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nav li a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(63, 62, 62, 0.404)
+}
+
+.please {
+
+    display: block;
+    margin: 10px;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.green {
+
+    display: block;
+    margin: auto;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+form {
+
+    margin: auto;
+    width: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#textInput {
+
+    width: 20px;
+    border: none;
+
+}
+
+
+.prestondiv {
+
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto, auto;
+    background-color: lightpink;
+
+}
+
+
+.fishavendiv {
+
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto, auto;
+    background-color: lightskyblue;
+}
+
+.sodadiv {
+
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto, auto;
+    background-color: lightsalmon;
+}
+
+.divpic {
+
+    display: grid;
+    width: 200px;
+    grid-column: 2/3;
+    margin: none;
+
+}
+
+h3 {
+    display: grid;
+    grid-column: 1/2;
+
+}
+
+.subtext {
+
+    display: grid;
+    grid-column: 1/2;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {}
+
+    .prestondiv {
+        width: 70%;
+        margin: auto;
+        background-color: lightpink;
+        display: grid;
+        grid-template-rows: auto, auto;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .sodadiv {
+        width: 70%;
+        margin: auto;
+        background-color: lightpink;
+        display: grid;
+        grid-template-rows: auto, auto;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .fishavendiv {
+        width: 70%;
+        margin: auto;
+        background-color: lightpink;
+        display: grid;
+        grid-template-rows: auto, auto;
+        align-items: center;
+        justify-items: center;
+    }
+
+    h3 {
+        display: grid;
+        grid-row: 1/2;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .subtext {
+        display: grid;
+        grid-row: 1/2;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .divpic {
+        display: grid;
+        grid-row: 2/3;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
+body {
+    font-family: helvetica;
+    margin: auto;
+}
+
+.pancake {
+
+    width: 280px;
+    display: block;
+    margin-bottom: 60px;
+    z-index: 1;
+    margin-left: 50px; 
+
+}
+
+.banner {
+
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+
+}
+
+.info {
+
+    position: realtive; 
+    padding-left: 340px;
+    padding-right: 20px;
+    max-width: 70%;
+    background-color: #fdf490d8;
+    margin: auto;
+    margin-top: -260px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.saturday {
+
+    color: #7c430e;
+
+
+}
+
+.text {
+    margin-top: -30px;
+    font-size: 1em;
+}
+
+  
