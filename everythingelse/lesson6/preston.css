@@ -161,7 +161,6 @@ form {
     display: grid;
     grid-template-columns: auto, auto;
     background-color: lightpink;
-
 }
 
 
@@ -182,7 +181,7 @@ form {
     padding: 10px;
     display: grid;
     grid-template-columns: auto, auto;
-    background-color: lightsalmon;
+    background-color: rgb(117, 51, 25);
 }
 
 .divpic {
