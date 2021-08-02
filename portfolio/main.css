@@ -164,7 +164,7 @@ li a:hover {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 5px; 
     width: 100%; 
-    margin-bottom: -20px; 
+    margin-bottom: 0px; 
 }
 
 .gallery1 {
@@ -422,6 +422,8 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: -10px; 
+    position: relative;
+    z-index: 3; 
 }
 
 footer p {
@@ -508,13 +510,20 @@ footer p {
 
 .insta {
 
-    color: black;
+    color: #bd4fb4;;
     text-decoration: none;
 }
 
-.insta:hover {
+.insta2 {
 
-    color: #e081d8;
+    color: #b14ba8;;
+    text-decoration: none;
+}
+
+
+.insta2:hover {
+
+    color: black;
 }
 
 .linkedin {
@@ -526,3 +535,10 @@ footer p {
 .linkedin:hover {
     color: black; 
 }
+
+.mail {
+
+    color: #4227a3;
+
+}
+
