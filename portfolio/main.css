@@ -1,4 +1,6 @@
 
+/* All pages styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
@@ -9,32 +11,10 @@ body {
 }
 
 h1 {
-    font-family: Open Sans, sans-serif; 
-    display:none;
-    
+    font-family: Open Sans, sans-serif;
 }
 
-.namebox {
-    position: relative;
-    background-color: white;
-    align-content: center;
-    justify-content: center;
-    margin: auto;
-    width: 100%;
-    z-index: 3;
-}
-
-.name {
-    position: relative;
-    display: block; 
-    max-width: 100%;
-    width: 80%;
-    margin-top: -10px;
-    z-index: 3;
-    margin: auto; 
-    align-content: center;
-
-}
+/* Navigation */
 
 .nav {
    
@@ -101,6 +81,93 @@ li a:hover {
     z-index: 5; 
 }
 
+/* Footer */
+
+footer {
+ 
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -10px; 
+    position: relative;
+    z-index: 3; 
+}
+
+footer p {
+
+    font-size: 1em; 
+    text-align: center;
+}
+
+
+.insta {
+
+    color: #bd4fb4;;
+    text-decoration: none;
+}
+
+.insta2 {
+
+    color: #b14ba8;;
+    text-decoration: none;
+}
+
+
+.insta2:hover {
+
+    color: black;
+}
+
+.linkedin {
+
+    color: #2f9abb;
+    
+}
+
+.linkedin:hover {
+    color: black; 
+}
+
+.mail {
+
+    color: #4227a3;
+
+}
+
+
+
+
+
+
+/*  Homepage Styles  (HP) */
+
+/* HP Header */
+
+.namebox {
+    position: relative;
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    z-index: 3;
+}
+
+.name {
+    position: relative;
+    display: block; 
+    max-width: 100%;
+    width: 80%;
+    margin-top: -10px;
+    z-index: 3;
+    margin: auto; 
+    align-content: center;
+
+}
+
+/* HP Section 1 (Intro & Shapes) */
+
 .sec1 {
     max-width:100%;
     width: 100%;
@@ -153,7 +220,52 @@ li a:hover {
 
 }
 
+/* HP Section 2 (Graphic Design) */
 
+/* HP Section 2 Intro Blue Box  */
+
+.section2 {
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    /*background-color: #89c6d8;*/
+    background-color: rgba(255, 255, 255, 0.123);  
+    margin-top: 390px;
+    position: relative;
+    z-index:2;
+    margin-bottom: 10px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.section2header {
+    color:rgb(69, 135, 189); 
+    font-size: 2em;
+    padding: 40px;
+    padding-bottom: 0px;
+    padding-top: 60px;
+    font-family: Open Sans, sanf-serif; 
+}
+
+.section2text {
+    color:rgb(13, 30, 65); 
+    font-size: 120%;
+    padding: 30px;
+    width: 30%;
+    padding-top: 0px;
+    padding-left: 40px;
+    margin-top: -10px;
+}
+
+.arrow {
+    display: block; 
+    float: right;
+    width: 6%;
+    margin-top: -190px; 
+    padding-right: 100px; 
+}
+
+/* HP Section 2 Image Gallery */
 
 .imagegallery {
 
@@ -254,44 +366,36 @@ li a:hover {
 
 }
 
-.section2 {
+/* HP Section 3 (Photography) */
+
+
+/* HP Section 3 Intro Text */
+
+#section3 {
+
+    margin-top: -25px; 
+    background-image: url(/portfolio/background\ white.png);
+    background-size: cover; 
     max-width: 100%;
     width: 100%;
-    height: 300px;
-    background-color: #89c6d8; 
-    margin-top: 390px;
+    height: 260px; 
     position: relative;
     z-index:2;
+    align-content: center; 
+    justify-content: center;
+    justify-items:center;
+    padding-top: 13px; 
+
+}
+
+#inside_section3 {
+    background-color: rgba(255, 255, 255, 0.096);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+    height: 200px;
     margin-bottom: 10px; 
+    
 }
-
-.section2header {
-    color:white; 
-    font-size: 2em;
-    padding: 40px;
-    padding-bottom: 0px;
-    padding-top: 60px;
-    font-family: Open Sans, sanf-serif; 
-}
-
-.section2text {
-    color:rgb(13, 30, 65); 
-    font-size: 120%;
-    padding: 30px;
-    width: 30%;
-    padding-top: 0px;
-    padding-left: 40px;
-    margin-top: -10px;
-}
-
-.arrow {
-    display: block; 
-    float: right;
-    width: 6%;
-    margin-top: -190px; 
-    padding-right: 100px; 
-}
-
 
 .photosection {
     background-color: white;
@@ -336,19 +440,24 @@ li a:hover {
 }
 
 .seemore:hover {
-    color: white;
+    color: rgb(212, 124, 205);
 }
+
+/* HP Section 3 Photo Captions */
 
 .captions {
 
     background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(15, 15, 15, 0.2), 0 6px 20px 0 rgba(17, 17, 17, 0.19);
     color: black;
     font-size: 1em;
-    margin-bottom: 30px; 
+    margin-bottom: 20px; 
     margin-top: -5px; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
+    position: relative;
+    z-index: 3; 
     
 }
 
@@ -374,17 +483,7 @@ li a:hover {
     
 }
 
-#section3 {
-
-    margin-top: -25px; 
-    background-image: url(/portfolio/background.png);
-    background-size: cover; 
-    max-width: 100%;
-    width: 100%;
-    height: 250px; 
-    position: relative;
-    z-index:2;
-}
+/* HP Final Section (Programming Languages) */
 
 .finalsection {
 
@@ -415,28 +514,14 @@ li a:hover {
 }
 
 
-footer {
- 
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: -10px; 
-    position: relative;
-    z-index: 3; 
-}
 
-footer p {
 
-    font-size: 1em; 
-    text-align: center;
-}
 
-.shapesandcolors {
 
-    max-width: 100%;
 
-}
+/* Graphic Design Page (GD) */
+
+/* GD header image*/
 
 .mainimage {
 
@@ -444,23 +529,240 @@ footer p {
     padding: 0px;
     margin:auto; 
     display: block; 
-    margin-bottom: -390px; 
+    margin-bottom: -550px; 
     
 }
 
-/* .yellowstripe {
+/* GD modal images */ 
 
-    background-color: white;
-    height: 70px; 
-    margin-top: 390px; 
-    margin-bottom: -395px; 
-} */
 
-.bigphoto {
+/* MODAL WORK */
 
-    max-width: 100%; 
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    /*max-height: 100%; */
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 20px 10px 40px;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    z-index: 100;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.showcase_section {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 100px 1fr 100px 1fr 100px 1fr 100px 1fr;
+    column-gap: 14.5%;
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+    row-gap: 10px; 
+
+}
+
+.showcase {
+    width: 100%;
+    margin: auto; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 100px; 
+}
+
+.showcase_title {
+
+    display: grid; 
+    width: 100%;
+    margin:auto; 
+    text-align: center; 
+    text-decoration: outline;
+    color:rgba(0, 0, 0, 0); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 0.9em; 
+}
+
+#st1{
+    grid-column: 1/4; 
+    grid-row: 1/2;
+    /*background-color: #c05d86c5;*/
+}
+
+.showcase1 {
+
+    grid-column: 1/2; 
+    grid-row: 2/3;
+}
+
+.showcase2 {
+
+    grid-column: 2/3; 
+    grid-row: 2/3;
+}
+
+.showcase3 {
+
+    grid-column: 3/4; 
+    grid-row: 2/3;
+}
+
+#st2{
+
+    grid-column: 1/4; 
+    grid-row: 3/4;
     
 }
+
+.showcase4 {
+
+    grid-column: 1/2; 
+    grid-row: 4/5;
+}
+.showcase5 {
+
+    grid-column: 2/3; 
+    grid-row: 4/5;
+}
+
+.showcase6 {
+
+    grid-column: 3/4; 
+    grid-row: 4/5;
+}
+
+#st3{
+    grid-column: 1/4; 
+    grid-row: 5/6;
+    
+}
+
+.showcase7 {
+
+    grid-column: 1/2; 
+    grid-row: 6/7;
+}
+.showcase8 {
+
+    grid-column: 2/3; 
+    grid-row: 6/7;
+}
+
+.showcase9 {
+
+    grid-column: 3/4; 
+    grid-row: 6/7;
+}
+
+#st4{
+
+    grid-column: 1/4; 
+    grid-row: 7/8;
+    
+}
+
+.showcase10 {
+
+    grid-column: 1/2; 
+    grid-row: 8/9;
+}
+.showcase11 {
+
+    grid-column: 2/3; 
+    grid-row: 8/9;
+}
+
+.showcase12 {
+
+    grid-column: 3/4; 
+    grid-row: 8/9;
+}
+
+
+
+
+
+
+
+
+
+/* Contact Page (CP) */
 
 .contactdiv {
     display: grid;
@@ -471,20 +773,25 @@ footer p {
 
 }
 
+/* CP Main Image */
 
 .mesitting {
  
     display: inline; 
-    max-width: 100%;
+    max-width: 60%;
     grid-column: 1/3;
-    padding: 20px; 
+    padding: 60px; 
+    padding-right: 10px;
+    padding-left: 200px; 
   
-    
 }
+
+/* CP Contact Info */
 
 .contactlinks {
     grid-column: 3/6;
-    padding: 50px; 
+    padding: 50px;
+    padding-left: 40px; 
     text-align: left;
 
 }
@@ -508,37 +815,4 @@ footer p {
 
 }
 
-.insta {
-
-    color: #bd4fb4;;
-    text-decoration: none;
-}
-
-.insta2 {
-
-    color: #b14ba8;;
-    text-decoration: none;
-}
-
-
-.insta2:hover {
-
-    color: black;
-}
-
-.linkedin {
-
-    color: #2f9abb;
-    
-}
-
-.linkedin:hover {
-    color: black; 
-}
-
-.mail {
-
-    color: #4227a3;
-
-}
 
