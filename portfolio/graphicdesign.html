@@ -4,7 +4,11 @@
 <head>
     <title>Audrey Jacobs' Portfolio</title>
     <link href="/portfolio/main.css" rel="stylesheet">
-    <link href="/portfolio/main.js" rel="script">
+    <!--src="/portfolio/main.js"-->
+
+    <script>
+
+    </script>
 
     <!-- because I can never find the link 
     https://audree-jacobs.github.io/audree-jacobs.github.io/portfolio/main.html
@@ -16,12 +20,10 @@
 <body>
 
     <div class="namebox">
-    <img class="name" src="/portfolio/white name.png">
+        <img class="name" src="/portfolio/white name.png">
     </div>
 
-    <h1>
-       AUDREY JACOBS  
-    </h1> 
+ 
     <ul class="nav">
         <li> <a href="/portfolio/main.html" class="websitedesign"> <b> HOMEPAGE </b> </a> </li>
         <li> <a href="/portfolio/graphicdesign.html" class="graphicdesign"> <b> GRAPHIC DESIGN </b> </a> </li>
@@ -31,48 +33,121 @@
 
     <img class="mainimage" src="/portfolio/squiggles2.png">
 
-    <div class="yellowstripe">  </div>
-
-    <div class="section2">
+    <!-- <div class="section2">
         <h2 class="section2header"> Scroll for some examples of my work! </h2>
-        <p class="section2text"> I made the following designs using Adobe Illustrator and Adobe Photoshop.  If you can't tell, I love bright colors and playful designs. </p> 
+        <p class="section2text"> I made the following designs using Adobe Illustrator and Adobe Photoshop. If you can't
+            tell, I love bright colors and playful designs. </p>
         <img class="arrow" src="/portfolio/arrow.png">
 
-    </div>
+    </div> --> 
 
-    <div class="image_gallery">
-        <img class="gallery1, gal" load=lazy src="/portfolio/Typography Poster.jpg" alt="gallery image"> 
-        <img class="gallery2, gal" load=lazy src="/portfolio/playing on my mind cropped.png" alt="gallery image"> 
-        <img class="gallery3, gal" load=lazy src="/portfolio/final album coverwhite cropped.png" alt="gallery image"> 
-        <img class="gallery4, gal" load=lazy src="/portfolio/statue penny dress cropped.png" alt="gallery image"> 
-        <img class="gallery5, gal" load=lazy src="/portfolio/symbol poster palm to palm.jpg" alt="gallery image"> 
-        <img class="gallery6, gal" load=lazy src="/portfolio/finished watch cropped.jpg" alt="gallery image"> 
-        <img class="gallery7, gal" load=lazy src="/portfolio/romeo climbing poster.jpg" alt="gallery image"> 
-        <img class="gallery8, gal" load=lazy src="/portfolio/phone hands finished.jpg" alt="gallery image"> 
-        <img class="gallery9, gal" load=lazy src="/portfolio/full icon set cropped.jpg" alt="gallery image"> 
-        <img class="gallery10, gal" load=lazy src="/portfolio/split hand poster.jpg" alt="gallery image"> 
-        <img class="gallery11, gal" load=lazy src="/portfolio/dino cropped.jpg" alt="gallery image"> 
-        <img class="gallery12, gal" load=lazy src="/portfolio/cropped.gif" alt="gallery image"> 
-        <img class="gallery13, gal" load=lazy src="/portfolio/bedroom.jpg" alt="gallery image"> 
-        <img class="gallery14, gal" load=lazy src="/portfolio/raccoon logo.png" alt="gallery image"> 
-        <img class="gallery15, gal" load=lazy src="/portfolio/bekah portrait.png" alt="gallery image"> 
-        <img class="gallery16, gal" load=lazy src="/portfolio/watching (combination).jpg" alt="gallery image"> 
+    <div class="showcase_section">
+
+        <div class="showcase_title" id="st1"> <h1> Romeo and Juliet Poster Series </h1> </div>
+
+        <div>
+        <img class="showcase1, showcase" load=lazy src="/portfolio/symbol poster palm to palm.jpg" alt="gallery image">
+        
+        </div>
+
+        <img class="showcase2, showcase" id="myImg" load=lazy src="/portfolio/Typography Poster.jpg"
+            alt="This poster is one in a series of posters advertising a Production of Romeo and Juliet.  I wanted to break away from the stereotypes of the play and do something unexpected and eye catching.  In a subtle nod to Juilet's death, her name is buried underground."
+            style="width:100%;max-width:300px;">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+
+
+
+
+        <img class="showcase3, showcase" load=lazy src="/portfolio/split hand poster.jpg" alt="gallery image">
+
+        <div class="showcase_title" id="st2"> <h1> Illustrator Projects </h1> </div>
+
+        <img class="showcase4, showcase" load=lazy src="/portfolio/playing on my mind cropped.png" alt="gallery image">
+
+        <img class="showcase5, showcase" load=lazy src="/portfolio/finished watch cropped.jpg" alt="gallery image">
+        
+        <img class="showcase6, showcase" load=lazy src="/portfolio/final album coverwhite cropped.png" alt="gallery image">
+
+        <div class="showcase_title" id="st3"> <h1> Photoshop Projects </h1> </div>
+
+        <img class="showcase7, showcase" load=lazy src="/portfolio/statue penny dress cropped.png" alt="gallery image">
+       
+        <img class="showcase8, showcase" load=lazy src="/portfolio/romeo climbing poster.jpg" alt="gallery image">
+        <img class="showcase9, showcase" load=lazy src="/portfolio/phone hands finished.jpg" alt="gallery image">
+        
+        <div class="showcase_title" id="st4"> <h1> Icons and Logos </h1> </div>
+        
+        <img class="showcase10, showcase" load=lazy src="/portfolio/full icon set cropped.jpg" alt="gallery image">
+        
+        <img class="showcase11, showcase" load=lazy src="/portfolio/logo sketches.png" alt="gallery image">
+
+        <img class="showcase12, showcase" load=lazy src="/portfolio/raccoon logo.png" alt="gallery image">
+       
+        <img class="showcase13, showcase" load=lazy src="/portfolio/cropped.gif" alt="gallery image">
+
+        <!--<img class="showcase16, showcase" load=lazy src="/portfolio/MOH logo 5 brown.png" alt="gallery image">
+        <img class="showcase13, showcase" load=lazy src="/portfolio/bedroom.jpg" alt="gallery image">
+        <img class="showcase11, showcase" load=lazy src="/portfolio/dino cropped.jpg" alt="gallery image">
         <img class="gallery17, gal" load=lazy src="/portfolio/the creation of Adam.jpg" alt="gallery image"> 
         <img class="gallery18, gal" load=lazy src="/portfolio/Notes 3 page9.png" alt="gallery image"> 
         <img class="gallery19, gal" load=lazy src="/portfolio/logo sketches.png" alt="gallery image"> 
         <img class="gallery20, gal" load=lazy src="/portfolio/MOH logo 5 brown.png" alt="gallery image"> 
+       -->
 
     </div>
 
 
- 
+
 
     <footer>
-        <p>  email: audreynj13@gmail.com </p>
-        <p>  insta: @audree_jacobs </p>
-        <p> <a class="linkedin" href="https://www.linkedin.com/in/audrey-jacobs-29473413b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHFo8D7x%2FTuOBP7WKgnJueQ%3D%3D" target="_blank"> linkedin  </a></p>
-        
+        <p class="mail"> email: audreynj13@gmail.com </p>
+        <p class="insta"> insta: <a class="insta2" href="https://www.instagram.com/audree_jacobs/" target="_blank">
+                @audree_jacobs </a></p>
+        <p> <a class="linkedin"
+                href="https://www.linkedin.com/in/audrey-jacobs-29473413b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHFo8D7x%2FTuOBP7WKgnJueQ%3D%3D"
+                target="_blank"> linkedin </a></p>
+
     </footer>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            captionText.innerHTML = img.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
+
 
 </body>
 
