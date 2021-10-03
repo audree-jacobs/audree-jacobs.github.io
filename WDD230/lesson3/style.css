@@ -67,3 +67,10 @@ h1 {
 .color {
     width: 70%; 
 }
+
+@media screen and (max-width: 580px) {
+
+    .n {
+        display: block;
+    }
+}
