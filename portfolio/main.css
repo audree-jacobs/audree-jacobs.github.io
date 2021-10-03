@@ -156,18 +156,26 @@ footer p {
 }
 
 .name {
+
     position: relative;
     display: block; 
     max-width: 100%;
-    width: 80%;
-    margin-top: -10px;
+    width: 45%;
+    margin-top: 0px;
+    padding: 5px;
+    padding-bottom: 25px;
+    padding-top: 15px;
     z-index: 3;
     margin: auto; 
     align-content: center;
-
 }
 
 /* HP Section 1 (Intro & Shapes) */
+
+.allStripes {
+
+    max-height: 600px;  
+}
 
 .sec1 {
     max-width:100%;
@@ -229,18 +237,18 @@ footer p {
     max-width: 100%;
     width: 100%;
     height: 300px;
-    /*background-color: #89c6d8;*/
-    background-color: rgba(255, 255, 255, 0.123);  
+    background-color: white;
+    /*background-color: rgba(255, 255, 255, 0.123);  */
     margin-top: 390px;
     position: relative;
     z-index:2;
     margin-bottom: 10px; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   
 }
 
 .section2header {
-    color:rgb(69, 135, 189); 
+    color:#50afe2; 
     font-size: 2em;
     padding: 40px;
     padding-bottom: 0px;
@@ -390,8 +398,8 @@ footer p {
 }
 
 #inside_section3 {
-    background-color: rgba(255, 255, 255, 0.096);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: rgba(255, 255, 255, 0.096);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  */
     margin: auto;
     height: 200px;
     margin-bottom: 10px; 
@@ -449,7 +457,7 @@ footer p {
 .captions {
 
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(15, 15, 15, 0.2), 0 6px 20px 0 rgba(17, 17, 17, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(15, 15, 15, 0.068), 0 6px 20px 0 rgba(17, 17, 17, 0.068);
     color: black;
     font-size: 1em;
     margin-bottom: 20px; 
@@ -488,7 +496,7 @@ footer p {
 
 .finalsection {
 
-    background-image: url(/portfolio/background.png);
+    background-image: url(assets/background.png);
     background-size: cover; 
     height: 650px; 
     text-align: center;
@@ -567,8 +575,8 @@ footer p {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 50%;
+    max-width: 400px;
     /*max-height: 100%; */
 }
 
@@ -759,7 +767,12 @@ footer p {
 
 
 
+/* Photography Page*/
 
+.bigphoto {
+    max-width: 100%;
+
+}
 
 
 
@@ -771,6 +784,7 @@ footer p {
     grid-gap: 0px;
     width: 100%;
     margin-bottom: 10px; 
+    font-size: 1.3vw;
 
 }
 
@@ -779,11 +793,10 @@ footer p {
 .mesitting {
  
     display: inline; 
-    max-width: 60%;
+    max-width: 100%;
+    width: 100%;
     grid-column: 1/3;
-    padding: 60px; 
-    padding-right: 10px;
-    padding-left: 200px; 
+    /*border-right: 2px solid black;*/
   
 }
 
@@ -792,8 +805,9 @@ footer p {
 .contactlinks {
     grid-column: 3/6;
     padding: 50px;
-    padding-left: 40px; 
-    text-align: left;
+    padding-left: 35px; 
+    text-align: left; 
+    background-color: rgba(223, 128, 226, 0.349);
 
 }
 
