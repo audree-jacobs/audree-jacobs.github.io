@@ -19,6 +19,30 @@ header {
     display: none; 
 }
 
+.menuButton:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.288), 0 6px 20px 0 rgba(255, 255, 255, 0.228);
+}
+
+#menu {
+    /*display: none;*/
+    width: 100px;
+    float: right;
+    text-decoration: none;
+    text-align: left; 
+    list-style: none;
+    background-color:#0C1925;
+    color: white; 
+    margin-top: -40px; 
+}
+.page {
+    color: white;
+    text-decoration: none; 
+} 
+.link {
+    color: white;
+    text-decoration: none; 
+}
+
 .bigTitle {
     font-size: 40px;
     padding-top: 30px;  
