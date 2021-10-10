@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    color: white; 
+    background-color: #03070D; 
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #0C1925; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.288), 0 6px 20px 0 rgba(0, 0, 0, 0.228);
+    margin: 0px; 
+    width: 100%; 
+    margin-top: -20px;
+    height: 130px; 
+}
+
+.menuButton {
+    display: none; 
+}
+
+.bigTitle {
+    font-size: 30px;
+    padding-top: 30px;  
+}
+
+.motto {
+    font-size: 13px; 
+    padding-bottom: 10px; 
+    margin-top: -10px; 
+}
+
+.logo {
+    /*max-width: 130px; */
+    max-width: 130px; 
+    float: left; 
+    margin-left: 15%; 
+}
+
+.navigation {
+    display: block;
+    text-decoration: none;
+    list-style: none; 
+    max-width: 100%;
+    margin: auto;
+    text-align: center; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.288), 0 6px 20px 0 rgba(255, 255, 255, 0.228);
+}
+
+.pages {
+    display: inline; 
+    padding-right: 10px;
+    font-size: 2.3vw;
+    color: white;
+    text-decoration: none; 
+}
+
+.links {
+    color: white;
+    text-decoration: none; 
+}
+
+.links:hover {
+    color: #657D8C;
+}
+
+main {
+    max-width: 64%; 
+    margin: auto; 
+}
+
+h2 {
+    font-size: 3vw; 
+}
+
+.hero {
+    width: 100%;
+    height: 130px; 
+}
+
+.weatherSum {
+    max-width: 110px;
+    height: 110px; 
+    background-color:#03070D; 
+    float: left;
+    position: relative;
+    z-index: 5; 
+    margin-top: -125px; 
+    margin-left: 10px; 
+    text-align: center; 
+}
+
+.forecast {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    background-color: #03070D;  
+    padding: 20px; 
+    box-shadow: 0 0px 5px 0 rgba(255, 255, 255, 0.288), 0 6px 20px 0 rgba(255, 255, 255, 0.228);
+     
+}
+
+.article {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    background-color: #03070D;  
+    padding: 20px; 
+    height: 150px; 
+    box-shadow: 0 0px 5px 0 rgba(255, 255, 255, 0.288), 0 6px 20px 0 rgba(255, 255, 255, 0.228);
+}
+
+.articleImg {
+    width: 150px; 
+    display: inline; 
+    float: right; 
+    margin-top: -35px; 
+}
+
+/* footer */
+
+footer {
+    background-color: #0C1925; 
+    width: 80%;
+    margin: auto;
+}
+
+.mapImg {
+    width: 230px;
+    height: 150px; 
+    display: none; 
+}
+
+.mediaImg {
+    width: 100px;
+    height: 20px; 
+}
+
+.bar {
+    background-color:#03070D; 
+    height: 50px; 
+    text-align: center;
+    padding: 15px; 
+}
+
+
+@media screen and (max-width: 760px) {
+
+    body {
+        background-color: #03070D; 
+    }
+
+    header {
+        height:  120px; 
+    }
+    
+    .bigTitle {
+        font-size: 25px;
+        padding-top: 30px; 
+    }
+
+    .motto {
+        font-size: 13px; 
+        padding-bottom: 10px; 
+        margin-top: -10px; 
+    }
+
+    .logo {
+        max-width: 110px; 
+    }
+    
+    h2 {
+        font-size: 23px; 
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+
+    body {
+        background-color: #03070D; 
+    }
+
+    header {
+        height: 110px; 
+    }
+
+    main {
+        max-width: 95%;
+    }
+
+    .bigTitle {
+        font-size: 20px;
+        padding-top: 30px;  
+    }
+
+    .navigation {
+        display: none; 
+    }
+
+    .menuButton {
+        display: block;
+        float: right; 
+        width: 50px; 
+        margin-top: -70px;  
+        margin-right: 20px; 
+    }
+
+    .logo {
+        max-width: 110px; 
+        margin-left: 5px; 
+    }
+
+    h2 {
+        font-size: 18px; 
+    }
+
+    .weatherSum {
+        max-width: 100%; 
+        height: 110px; 
+        background-color:#03070D;
+        text-align: left; 
+        position: static;
+        z-index: 0; 
+        float:none; 
+        margin: 0px;  
+        padding: 10px; 
+        margin-top: 10px; 
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.288), 0 6px 20px 0 rgba(255, 255, 255, 0.228);
+    }
+
+    .articleImg {
+        width: 95%; 
+        height: 100px; 
+        display: block; 
+        float: none; 
+        margin-top: 0px; 
+    }
+
+    footer {
+        width: 95%;
+    }
+}

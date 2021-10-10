@@ -1,0 +1,23 @@
+
+
+.navigation {
+    width: 60%;
+    margin:auto;
+    background-color: #85C9E8;
+    padding: 20px; 
+    text-align:center;
+}
+  
+li {
+
+    display: inline; 
+    padding: 10px; 
+    margin:auto; 
+}
+
+@media screen and (max-width:580px) {
+
+    li {
+        display: block;
+    }
+}
