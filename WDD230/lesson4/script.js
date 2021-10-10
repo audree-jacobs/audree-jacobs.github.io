@@ -19,3 +19,14 @@ function lastUpdated() {
 lastUpdated();
 
 
+function menuDrop() {
+
+    document.querySelector('#menu').style.display = "block";
+
+}
+
+function menuOff() {
+
+    document.querySelector('#menu').style.display = "none";
+
+}
