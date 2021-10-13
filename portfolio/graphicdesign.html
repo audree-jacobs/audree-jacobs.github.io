@@ -6,9 +6,11 @@
     <link href="main.css" rel="stylesheet">
     <script src="main.js" defer> </script>
 
+    <link rel="icon" href="assets/blue favicon.png" sizes="16x16" type="image/png">
+
 
     <!-- because I can never find the link 
-    https://audree-jacobs.github.io/audree-jacobs.github.io/portfolio/main.html
+    https://audree-jacobs.github.io/audree-jacobs.github.io/portfolio/index.html
     -->
 
     <!-- dry oar website https://plant-clumsy-antimony.glitch.me/rivers.html why won't my changes commit -->
@@ -40,70 +42,70 @@
 
     <div class="showcase_section">
 
-        <div class="showcase_title" id="st1"> <h1> Romeo and Juliet Poster Series </h1> </div>
-
-        <div>
-        <img class="showcase1, showcase" load=lazy src="assets/symbol poster palm to palm.jpg" alt="gallery image">
-        
-        </div>
-
-        <img class="showcase2, showcase" id="myImg" load=lazy src="assets/Typography Poster.jpg"
-            alt="This poster is one in a series of posters advertising a Production of Romeo and Juliet.  I wanted to break away from the stereotypes of the play and do something unexpected and eye catching.  In a subtle nod to Juilet's death, her name is buried underground."
-            style="width:100%;max-width:300px;">
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
+         <!-- The Modal -->
+         <div id="myModal" class="modal">
 
             <!-- The Close Button -->
             <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 
             <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
+            <img class="modal-content" id="modal-content">
 
             <!-- Modal Caption (Image Text) -->
             <div id="caption"></div>
         </div>
 
+        <!-- Title Section -->
+        <div class="showcase_title" id="st1" > <h1> Romeo and Juliet Poster Series </h1> </div>
+
+        <!-- Content -->
+        <img class="showcase1 showcase styleModal" load=lazy id="image1" onclick="showModal('image1');" src="assets/symbol poster palm to palm.jpg" alt="gallery image">
+
+        <img class="showcase2 showcase styleModal" id="myImg" onclick="showModal('myImg');" load=lazy src="assets/Typography Poster.jpg"
+            alt="This poster is one in a series of posters advertising a Production of Romeo and Juliet.  I wanted to break away from the stereotypes of the play and do something unexpected and eye catching.  In a subtle nod to Juilet's death, her name is buried underground."
+            style="width:100%;max-width:300px;">
+
+        <img class="showcase3 showcase styleModal" load=lazy id="image3" onclick="showModal('image3');" src="assets/split hand poster.jpg" alt="gallery image">
 
 
-
-        <img class="showcase3, showcase" load=lazy src="assets/split hand poster.jpg" alt="gallery image">
-
+        <!-- Title Section -->
         <div class="showcase_title" id="st2"> <h1> Illusassets/trator Projects </h1> </div>
 
-        <img class="showcase4, showcase" load=lazy src="assets/playing on my mind cropped.png" alt="gallery image">
+        <!-- Content -->
+        <img class="showcase4 showcase styleModal" load=lazy onclick="showModal('image4');" src="assets/playing on my mind cropped.png" alt="gallery image">
 
-        <img class="showcase5, showcase" load=lazy src="assets/finished watch cropped.jpg" alt="gallery image">
+        <img class="showcase5 showcase styleModal" load=lazy id="image5" onclick="showModal('image5');" src="assets/finished watch cropped.jpg" alt="gallery image">
         
-        <img class="showcase6, showcase" load=lazy src="assets/final album coverwhite cropped.png" alt="gallery image">
+        <img class="showcase6 showcase styleModal" load=lazy  onclick="showModal('image6');" src="assets/final album coverwhite cropped.png" alt="gallery image">
 
+
+        <!-- Title Section -->
         <div class="showcase_title" id="st3"> <h1> Photoshop Projects </h1> </div>
 
-        <img class="showcase7, showcase" load=lazy src="assets/statue penny dress cropped.png" alt="gallery image">
+        <!-- Content -->
+        <img class="showcase7 showcase styleModal" load=lazy id="image7" onclick="showModal('image7');" src="assets/statue penny dress cropped.png" alt="gallery image">
         
-        <img class="showcase8, showcase" load=lazy src="assets/phone hands finished.jpg" alt="gallery image">
+        <img class="showcase8 showcase styleModal" load=lazy id="image8" onclick="showModal('image8');" src="assets/phone hands finished.jpg" alt="gallery image">
 
-        <img class="showcase9, showcase" load=lazy src="assets/romeo climbing poster.jpg" alt="gallery image">
+        <img class="showcase9 showcase styleModal" load=lazy id="image9" onclick="showModal('image9');" src="assets/romeo climbing poster.jpg" alt="gallery image">
        
         
+        <!-- Title Section -->
         <div class="showcase_title" id="st4"> <h1> Icons and Logos </h1> </div>
         
-        <img class="showcase10, showcase" load=lazy src="assets/full icon set cropped.jpg" alt="gallery image">
+        <!-- Content -->
+        <img class="showcase10 showcase styleModal" load=lazy id="image10" onclick="showModal('image10');" src="assets/full icon set cropped.jpg" alt="gallery image">
         
-        <img class="showcase11, showcase" load=lazy src="assets/logo sketches.png" alt="gallery image">
+        <img class="showcase11 showcase styleModal" load=lazy id="image11" onclick="showModal('image11');" src="assets/logo sketches.png" alt="gallery image">
 
-        <img class="showcase12, showcase" load=lazy src="assets/raccoon logo.png" alt="gallery image">
+        <img class="showcase12 showcase styleModal" load=lazy id="image12" onclick="showModal('image12');" src="assets/rachel.gif" alt="gallery image">
        
-        <img class="showcase13, showcase" load=lazy src="assets/cropped.gif" alt="gallery image">
 
-        <!--<img class="showcase16, showcase" load=lazy src="/portfolio/MOH logo 5 brown.png" alt="gallery image">
-        <img class="showcase13, showcase" load=lazy src="/portfolio/bedroom.jpg" alt="gallery image">
-        <img class="showcase11, showcase" load=lazy src="/portfolio/dino cropped.jpg" alt="gallery image">
-        <img class="gallery17, gal" load=lazy src="/portfolio/the creation of Adam.jpg" alt="gallery image"> 
-        <img class="gallery18, gal" load=lazy src="/portfolio/Notes 3 page9.png" alt="gallery image"> 
-        <img class="gallery19, gal" load=lazy src="/portfolio/logo sketches.png" alt="gallery image"> 
-        <img class="gallery20, gal" load=lazy src="/portfolio/MOH logo 5 brown.png" alt="gallery image"> 
-       -->
+        <!-- Invisible Pictures -->
+
+        <img class="invisible" id="image4" src="assets/playing on my mind.png">
+
+        <img class="invisible" id="image6" src="assets/final album coverwhite.png">
 
     </div>
 
