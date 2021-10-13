@@ -248,7 +248,7 @@ footer p {
 }
 
 .section2header {
-    color:#50afe2; 
+    color:#6FACC6; 
     font-size: 2em;
     padding: 40px;
     padding-bottom: 0px;
@@ -433,6 +433,7 @@ footer p {
     padding: 10px;
     margin-bottom: 20px; 
     font-size: 1.3em; 
+    margin-top: -20px;
 }
 
 .phototitle {
@@ -548,13 +549,13 @@ footer p {
 /* MODAL WORK */
 
 /* Style the Image Used to Trigger the Modal */
-#myImg {
+.styleModal {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+.styleModal:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -763,6 +764,10 @@ footer p {
     grid-row: 8/9;
 }
 
+
+.invisible {
+    display: none; 
+}
 
 
 
