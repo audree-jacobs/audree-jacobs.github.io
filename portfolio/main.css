@@ -8,7 +8,9 @@ body {
 
     margin:0;
     padding: 0; 
+    width: 100%;
     max-width: 100%; 
+    overflow-x: hidden;
 
 }
 
@@ -34,8 +36,6 @@ h1 {
     height: auto;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0.068);
-    
-
 }
 
 li {
@@ -138,10 +138,6 @@ footer p {
 }
 
 
-
-
-
-
 /*  Homepage Styles  (HP) */
 
 /* HP Header */
@@ -173,62 +169,42 @@ footer p {
 
 /* HP Section 1 (Intro & Shapes) */
 
-.allStripes {
-
-    max-height: 600px;  
+.first-section {
+        height: 600px;
+        max-height: 600px; 
+        background-image:  url(assets/background.png);
+        background-size: cover; 
+        margin-top: 0px; 
+        max-width: 100%;
+        width: 100%; 
+        position: relative;
+        margin-bottom: 0px; 
+        object-fit: contain;
 }
 
-.sec1 {
-    max-width:100%;
-    width: 100%;
-    margin-top: 0px; 
+.intro-image {
+    max-height: 600px; 
+    position: absolute;
+    bottom: 0px; 
+    right: 50px; 
+    z-index: 5; 
 }
 
-.redbox {
-
-    margin-bottom: -450px;
-    height: 400px; 
-    position: relative;
-    z-index: 1;
-
-}
-
-.redstripe {
-
-    position: sticky;
-    top: 0; 
-    z-index: 1;
-    max-width: 100%;
-    margin-top: -200px;
-}
-
-.me {
-
-    display: block;
-    float: right;
-    position: relative;
-    margin-bottom: -760px; 
-    max-width: 75%;
-    z-index: 4;
-    margin-right: 15px; 
-
-}
-
-.stayhere{
-    height: 400px;
-
-}
-
-.green {
-
-    position: sticky;
-    top: 6em;
-    z-index: 0;
-    margin:auto;
+.stripe1 {
     max-width: 100%; 
-    margin-bottom: -620px;
-
+    z-index: 2;
+    object-fit: contain;
 }
+
+.stripe2 {
+    max-width: 100%; 
+    position: sticky; 
+    margin-top: -200px;
+    top: 0px;
+    z-index: 2;
+    object-fit: contain;
+}
+
 
 /* HP Section 2 (Graphic Design) */
 
@@ -240,12 +216,9 @@ footer p {
     height: 300px;
     background-color: white;
     /*background-color: rgba(255, 255, 255, 0.123);  */
-    margin-top: 390px;
     position: relative;
-    z-index:2;
-    margin-bottom: 10px; 
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-  
+    z-index:3;
+    margin-top: -25px;  
 }
 
 .section2header {
@@ -287,6 +260,10 @@ footer p {
     gap: 5px; 
     width: 100%; 
     margin-bottom: 0px; 
+    position: relative;
+    z-index: 5; 
+    background-color: white; 
+
 }
 
 .gallery1 {
@@ -365,6 +342,8 @@ footer p {
 .gal {
    width: 100%;
    max-width: 24.7%; 
+   position: relative;
+    z-index: 5; 
 }
 
 .caption {
@@ -670,13 +649,6 @@ footer p {
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
 .showcase_section {
 
     display: grid;
@@ -911,3 +883,36 @@ footer p {
 }
 
 
+
+
+/* media queries */ 
+
+/* HomePage moving stripes stop moving at 1000px */
+
+@media screen and (max-width: 1000px) {
+
+    .stripe1 {
+        position: relative;
+        width: 1000px;
+        max-width: 1000px;
+        margin-top: -50px; 
+    }
+
+    .stripe2 {
+        position: relative;
+        width: 1000px;
+        max-width: 1000px;
+        margin-top: 0px; 
+    }
+
+}
+
+/* GD Page Modal images
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+        max-width: 100%; 
+    }
+}
