@@ -306,29 +306,33 @@ footer p {
 
 .arrow {
     display: block; 
-    float: right;
     width: 6%;
-    margin-top: -190px; 
-    padding-right: 100px; 
+    position: absolute; 
+    bottom: 50px;
+    right: 100px; 
+
 }
 
 /* HP Section 2 Image Gallery */
 
 .imagegallery {
 
-    width: 99%;
     margin: auto; 
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px; 
+    gap: 5px; */
     width: 100%; 
     margin-bottom: 0px; 
     position: relative;
     z-index: 5; 
     background-color: white; 
+    display: flex;
+    flex-wrap: wrap;
 
 }
+
+/*
 
 .gallery1 {
     display: grid;
@@ -403,10 +407,13 @@ footer p {
     grid-row: 3/4;
 }
 
+*/
+
 .gal {
-   width: 100%;
-   max-width: 24.7%; 
-   position: relative;
+    flex: 24.5%; 
+    /*flex-basis: 24%; */
+    width: 24.5%;
+    position: relative;
     z-index: 5; 
 }
 
