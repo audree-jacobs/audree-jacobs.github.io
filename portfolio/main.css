@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
 
 body {
 
@@ -596,6 +597,7 @@ footer p {
     text-align: right; 
     padding: 0px 30px; 
     font-family: 'Lobster', cursive;
+    /*font-family: 'Sail', cursive;*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -627,6 +629,7 @@ footer p {
     display: block; 
     padding: 15px;
     font-size: 1.5em; 
+    font-family: Open Sans, sans-serif;
     text-decoration: none;
     color: #4d321d;
 }

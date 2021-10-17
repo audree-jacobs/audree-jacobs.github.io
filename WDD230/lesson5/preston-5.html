@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Weather Website">
+    <title> Weather Website Preston Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer> </script>
+</head>
+
+<body>
+
+    <div id="pancake"> 
+        <h3 class="pancakeText"> Saturday = Pancakes in the park! <br>
+        9:00 am at the city park. </h3>
+    </div>
+
+    <header>
+        <img class="logo" src="images/weather logo.png"> 
+        <h1 class="bigTitle"> Night Forecasts </h1>
+        <h3 class="motto"> motto/catch phrase  </h3>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="pages" > <a class="links" href="#"> Home </a> </li>
+            <li class="pages active"> <a class="links active" href="#"> Preston </a> </li>
+            <li class="pages"> <a class="links" href="#"> Soda Springs </a> </li>
+            <li class="pages"> <a class="links" href="#"> Fish Haven </a> </li>
+            <li class="pages"> <a class="links" href="#"> Storm Center </a> </li>
+            <li class="pages"> <a class="links" href="#"> Gallery </a> </li>
+        </ul>
+        <img class="menuButton" onclick="button()" src="images/menu.png"> 
+        <ul id="menu">
+            <li class="page" > <a class="link" href="#"> Home </a> </li>
+            <li class="page active"> <a class="link active" href="#"> Preston </a> </li>
+            <li class="page"> <a class="link" href="#"> Soda Springs </a> </li>
+            <li class="page"> <a class="link" href="#"> Fish Haven </a> </li>
+            <li class="page"> <a class="link" href="#"> Storm Center </a> </li>
+            <li class="page"> <a class="link" href="#"> Gallery </a> </li>
+            <li class="page"> <img class="x" onclick = please() src="images/x.png" ></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2> Preston Idaho </h2>
+        
+        <div class="section1">
+            <img class="hero" src="images/preston.jpg">
+            <div class="weatherSum">
+                <h3 class="title"> Weather Summary</h3>
+                <p class="summaryLeft"> 
+                Currently: <br>
+                High:  <br>
+                Low:  <br>
+                Wind:  <br>
+                Cloud cover:  
+                </p>
+                <p class="summaryRight"> 
+                     Sunny <br>
+                     40* <br>
+                     20* <br>
+                     15 mph <br>
+                     Heavy 
+                </p>
+            </div>
+        </div>
+
+        <section class="forecast">
+            <h3 class="title"> Five Day Forecast</h3>
+            <section class="forecastDays">
+
+                <div class="monday"> 
+                <p class="day">
+                    Monday
+                </p>
+                <img class="icon" src="images/cloudy.jpg">
+                <p class="temp"> 45 &#8457; </p>
+                </div>
+
+                <div class="tuesday">
+                <p class="day">
+                    Tuesday
+                </p>
+                <img class="icon" src="images/rainy.jpg">
+                <p class="temp"> 48 &#8457;  </p>
+                </div>
+
+
+                <div class="wednesday">
+                <p class="day">
+                    Wednesday
+                </p>
+                <img class="icon" src="images/weather icons.jpg">
+                <p class="temp"> 56 &#8457;  </p>
+                </div>
+                
+                <div class="thursday">
+                <p class="day">
+                    Thursday
+                </p>
+                <img class="icon" src="images/cloudy.jpg">
+                <p class="temp"> 40 &#8457; </p>
+                </div>
+
+                <div class="friday">
+                <p class="day">
+                    Friday
+                </p>
+                <img class="icon" src="images/cloudy.jpg">
+                <p class="temp"> 38 &#8457;  </p>
+                </div>
+
+
+            </section>
+        </section>
+
+        <div class="article">
+            <h3 class="title"> Article</h3>
+            <img class="articleImg" src="images/blue.jpg">
+            <p class="articleText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                qui officia deserunt mollit anim id est laborum.  exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                qui officia deserunt mollit anim id est laborum.</p>
+            
+        </div>
+
+    </main>
+   
+    <footer>
+
+        <section class="contactSection">
+        <div class="contact">
+            <h3 class="title"> Contact Info </h3> 
+            <p> 
+            address: <br>
+            (280) 915-6748 <br>
+            nightforecast@gmail.com </p>
+
+        </div>
+
+        <div class="media"> 
+            <img class="mediaImg" src="images/facebook-icon-png-774.png">
+            <img class="mediaImg" src="images/instagram.png">
+            <img class="mediaImg" src="images/youtube.png">
+        </section>
+
+        </div>
+
+        <div class="map">
+            <img class= "mapImg" src="images/map.jpg">
+        </div>
+
+    </footer>
+
+    <div class="bar">
+        <p class="foot" id="currentYear"></p> 
+    </div>
+
+</body>
+
+</html>
