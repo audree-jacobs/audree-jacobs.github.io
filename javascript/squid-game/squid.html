@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="squid.css"> 
+    <script src="squid.js" defer></script>
+    <title>Squid Game</title>
+</head>
+
+<body id="body">
+
+   <header id="intro">
+    <p class="welcome"> welcome to the</p>
+    <h1> SQUID GAMES </h1>
+    <p class="instruction"> Instructions: use your needle to cut the shape out of the honeycomb 
+    without breaking it.  Click on the outline carefully to cut it out. If you 
+    make a crack in the shape you lose this game. Good luck!</p>
+
+   </header> 
+    
+   <div class="the-game">
+    <canvas id="canvas">
+
+    </canvas>
+    </div>
+
+    <p id = "info"> </p>
+    <p id = "y"> </p>
+    <p id = "c"> </p>
+    <div id ="winner"> 
+    
+        <h2> Congratulations!  You won this game!!!</h2>
+        <p class="instruction"> here is your prize money: </p>
+        <img class="prize" src="prize.png"> 
+        <button onclick=endGame()> play again </button>
+        
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+
+
+body {
+   background-color: rgb(231, 226, 207);
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3.5em;  
+    margin-top: -10px; 
+}
+
+
+#intro {
+    text-align: center; 
+    margin-bottom: 60px; 
+}
+
+.welcome {
+    font-size: 1.5em; 
+}
+
+.instruction {
+    width: 64%;
+    margin: auto; 
+    font-size: 1.2em; 
+}
+
+#canvas {
+    height: 500px;
+    width: 500px; 
+    background-color: rgb(224, 165, 55);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 100px; 
+    margin-top: 20px; 
+    cursor:url('needle.png') 0 15, auto;
+}
+
+.the-game {
+    width: 100%;
+    justify-content: center;
+}
+
+#winner {
+    text-align: center;
+    background-color: #c1de83;
+    padding: 50px; 
+    display: none; 
+    margin-top: -30px; 
+}
+
+.prize {
+    width: 80%;
+    margin:auto; 
+}
+
+h2 {
+    font-size: 2em;
+    font-family: sans-serif; 
+}
+
+button {
+    margin: auto;
+    width: 25%;
+    padding: 20px; 
+    font-size: 2em; 
+    display: block;
+}
