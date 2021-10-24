@@ -1,3 +1,8 @@
+WebFont.load({
+    google: {
+      families: ['Roboto']
+    }
+  });
 
 function button() {
     document.querySelector('#menu').style.display = "block";
