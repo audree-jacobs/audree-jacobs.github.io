@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+#pancake {
+    display: none;
+    background-color:rgb(28, 121, 184);
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+body {
+    color: white; 
+    background-color: #03070D; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+}
+
+header {
+    background-color: #0C1925; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.288), 0 6px 20px 0 rgba(0, 0, 0, 0.228);
+    margin: 0px; 
+    width: 100%; 
+    margin-top: -20px;
+    height: 130px; 
+}
+
+.menuButton {
+    display: none; 
+}
+
+.menuButton:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.288), 0 6px 20px 0 rgba(255, 255, 255, 0.228);
+}
+
+#menu {
+    display: none;
+    max-width: 100%;
+    text-decoration: none;
+    text-align: center; 
+    list-style: none;
+    background-color:#0C1925;
+    color: white; 
+}
+
+#menu li {
+    padding: 8px; 
+}
+
+#menu li a:hover {
+    color: rgb(22, 107, 163); 
+}
+
+.x{
+    width: 15px; 
+}
+
+.x:hover {
+    opacity: 0.3;
+}
+
+.page {
+    color: white;
+    text-decoration: none; 
+} 
+.link {
+    color: white;
+    text-decoration: none; 
+}
+
+.bigTitle {
+    font-size: 40px;
+    padding-top: 30px;  
+}
+
+.motto {
+    font-size: 13px; 
+    padding-bottom: 10px; 
+    margin-top: -10px; 
+}
+
+.logo {
+    /*max-width: 130px; */
+    max-width: 130px; 
+    float: left; 
+    margin-left: 15%; 
+}
+
+.navigation {
+    display: block;
+    text-decoration: none;
+    list-style: none; 
+    max-width: 100%;
+    margin: auto;
+    text-align: center; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.288), 0 6px 20px 0 rgba(255, 255, 255, 0.228);
+}
+
+.pages {
+    display: inline; 
+    padding-right: 10px;
+    font-size: 2.3vw;
+    color: white;
+    text-decoration: none; 
+}
+
+.links {
+    color: white;
+    text-decoration: none; 
+}
+
+.links:hover {
+    color: #657D8C;
+}
+
+main {
+    max-width: 64%; 
+    margin: auto; 
+}
+
+h2 {
+    font-size: 3vw; 
+}
+
+.hero {
+    max-width: 100%;
+    width: 100%; 
+}
+
+.section1 {
+    position: relative; 
+    max-width: 100%; 
+}
+
+.weatherSum {
+    width: 30%;
+    height: 80%; 
+    background-color:#051320; 
+    opacity: 0.7;
+    float: left;
+    position: absolute;
+    z-index: 5; 
+    bottom: 10px;
+    left: 10px; 
+    text-align: center; 
+    font-size: 1.3vw; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+}
+
+.title {
+    grid-column: 1/3; 
+    grid-row: 1/2; 
+    font-size: 1.5em;
+}
+
+.summaryLeft {
+    grid-column: 1/2;
+    grid-row: 2/5;
+    text-align: right;
+}
+
+.summaryRight {
+    grid-column: 2/3;
+    grid-row: 2/5;
+    text-align: left; 
+    padding-left: 5px; 
+}
+
+.forecast {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    background-color: #03070D;  
+    padding: 20px; 
+    box-shadow: 0 0px 5px 0 rgba(255, 255, 255, 0.288), 0 6px 20px 0 rgba(255, 255, 255, 0.228);
+
+}
+
+.forecastDays {
+    width: 100%; 
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center; 
+}
+
+.monday {
+    grid-column: 1/2;
+}
+
+.tuesday {
+    grid-column: 2/3;
+}
+
+.wednesday {
+    grid-column: 3/4;
+}
+
+.thursday {
+    grid-column: 4/5;
+}
+
+.friday {
+    grid-column: 5/6;
+}
+
+.day {
+    font-size: 2vw;
+}
+
+.temp {
+    font-size: 1.7vw;
+}
+
+.icon {
+    width: 60%; 
+}
+
+.article {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    background-color: #03070D;  
+    padding: 20px; 
+    /* height: 150px; */
+    box-shadow: 0 0px 5px 0 rgba(255, 255, 255, 0.288), 0 6px 20px 0 rgba(255, 255, 255, 0.228);
+}
+
+.articleText {
+    display: inline; 
+    float: none; 
+    font-size: 1.2em;
+    hyphens: auto;
+}
+
+.articleImg {
+    width: 38%; 
+    display: inline; 
+    float: right; 
+    padding: 10px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #0C1925; 
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 50px; 
+}
+
+.contactSection {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.contact {
+    padding: 20px;
+}
+
+.map {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.mapImg {
+    width: 300px;
+    height: 200px; 
+    padding: 20px;
+    padding-right: 100px; 
+    float: right; 
+}
+
+.media {
+    padding-left: 20px;
+}
+
+.mediaImg {
+    width: 20px;
+    height: 20px; 
+}
+
+.bar {
+    background-color:#03070D; 
+    height: 50px; 
+    max-width: 100%; 
+    text-align: center;
+    padding: 15px;
+}
+
+.active {
+    color: #6293D4; 
+    font-weight: bold;
+}
+
+@media screen and (max-width: 760px) {
+
+    body {
+        background-color: #03070D; 
+    }
+
+    header {
+        height:  120px; 
+    }
+    
+    .bigTitle {
+        font-size: 30px;
+        padding-top: 30px; 
+    }
+
+    .motto {
+        font-size: 13px; 
+        padding-bottom: 10px; 
+        margin-top: -10px; 
+    }
+
+    .logo {
+        max-width: 110px; 
+    }
+    
+    h2 {
+        font-size: 23px; 
+    }
+
+    .articleImg {
+        width: 65%; 
+        display: inline; 
+        float: right; 
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+
+    body {
+        background-color: #03070D; 
+    }
+
+    header {
+        height: 110px; 
+    }
+
+    main {
+        max-width: 95%;
+    }
+
+    .bigTitle {
+        font-size: 20px;
+        padding-top: 30px;  
+    }
+
+    .navigation {
+        display: none; 
+    }
+
+    .menuButton {
+        display: block;
+        float: right; 
+        width: 50px; 
+        margin-top: -70px;  
+        margin-right: 20px; 
+    }
+
+    .logo {
+        max-width: 110px; 
+        margin-left: 5px; 
+    }
+
+    h2 {
+        font-size: 28px; 
+        text-align: center; 
+    }
+
+    .weatherSum {
+        width: 100%; 
+        max-width: 96%;
+        /* height: 110px; */
+        background-color:#03070D;
+        opacity: 1;
+        text-align: center; 
+        font-size: 3vw !important; 
+        position: static;
+        z-index: 0; 
+        float:none; 
+        margin: 0px;  
+        padding: 10px; 
+        margin-top: 10px; 
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.185), 0 6px 20px 0 rgba(255, 255, 255, 0.144);
+    }
+
+    .forecast {
+        display: none; 
+    }
+
+    .articleImg {
+        width: 95%; 
+        display: block; 
+        float: none; 
+        margin-top: 0px; 
+    }
+
+    .mapImg {
+        display: block;
+        float: none; 
+    }
+
+    .bar {
+        display: block; 
+    }
+
+    footer {
+        width: 95%;
+        display: block;
+    }
+
+}

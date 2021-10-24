@@ -33,7 +33,7 @@ var weekDay;
 weekDay = day.getDay();
 
 function pancakes() {
-    if (weekDay = 6) {
+    if (weekDay === 6) {
     document.querySelector('pancake').style.display = "block";
     } 
 }
