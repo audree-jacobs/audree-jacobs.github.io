@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Weather Website">
+    <title> Weather Website Preston Page</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="../lesson6/script.js" defer> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/weather logo.png">
+        <h1 class="bigTitle"> Night Forecasts </h1>
+        <h3 class="motto"> motto/catch phrase </h3>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="pages"> <a class="links" href="#"> Home </a> </li>
+            <li class="pages"> <a class="links" href="../lesson6/preston-6.html"> Preston </a> </li>
+            <li class="pages"> <a class="links" href="#"> Soda Springs </a> </li>
+            <li class="pages"> <a class="links" href="#"> Fish Haven </a> </li>
+            <li class="pages"> <a class="links" href="#"> Storm Center </a> </li>
+            <li class="pages active"> <a class="links active" href="../lesson7/gallery.html"> Gallery </a> </li>
+        </ul>
+        <img class="menuButton" onclick="button()" src="images/menu.png">
+        <ul id="menu">
+            <li class="page"> <a class="link" href="#"> Home </a> </li>
+            <li class="page"> <a class="link" href="../lesson6/preston-6.html"> Preston </a> </li>
+            <li class="page"> <a class="link" href="#"> Soda Springs </a> </li>
+            <li class="page"> <a class="link" href="#"> Fish Haven </a> </li>
+            <li class="page"> <a class="link" href="#"> Storm Center </a> </li>
+            <li class="page active"> <a class="link active" href="../lesson7/gallery.html"> Gallery </a> </li>
+            <li class="page"> <img class="x" onclick=please() src="images/x.png"></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2> Weather Gallery </h2>
+        <div class="gallery">
+            <img class="images" id="img1" load=lazy src="images/weather1.jpg">
+            <img class="images" id="img2" load=lazy src="images/weather2.jpg"> 
+            <img class="images" id="img3" load=lazy src="images/weather3.jpg"> 
+            <img class="images" id="img4" load=lazy src="images/weather4.jpg"> 
+            <img class="images" id="img5" load=lazy src="images/weather5.jpg"> 
+            <img class="images" id="img6" load=lazy src="images/weather6.jpg"> 
+            <img class="images" id="img7" load=lazy src="images/weather7.jpg"> 
+            <img class="images" id="img8" load=lazy src="images/weather8.jpg"> 
+            <img class="images" id="img9" load=lazy src="images/weather9.jpg"> 
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <section class="contactSection">
+            <div class="contact">
+                <h3 class="title"> Contact Info </h3>
+                <p>
+                    address: <br>
+                    (280) 915-6748 <br>
+                    nightforecast@gmail.com </p>
+
+            </div>
+
+            <div class="media">
+                <img class="mediaImg" src="images/facebook-icon-png-774.png">
+                <img class="mediaImg" src="images/instagram.png">
+                <img class="mediaImg" src="images/youtube.png">
+        </section>
+
+        </div>
+
+        <div class="map">
+            <img class="mapImg" src="images/map.jpg">
+        </div>
+
+    </footer>
+
+    <div class="bar">
+        <p class="foot" id="currentYear"></p>
+    </div>
+
+</body>
+
+</html>

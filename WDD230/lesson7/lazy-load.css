@@ -1,0 +1,22 @@
+
+
+h1 {
+    text-align: center; 
+}
+
+.images {
+    width: 400px;
+    height: 300px; 
+    display: block; 
+    margin:auto;
+    padding-top: 15px; 
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
