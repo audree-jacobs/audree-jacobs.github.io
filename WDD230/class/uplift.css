@@ -1,0 +1,179 @@
+/*
+Theme Name: uplift divi
+Version: 1.0
+Description: A child theme of Divi
+Author: audreynj
+Template: Divi
+*/
+
+@import url("../Divi/style.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Arvo', serif !important;
+}
+
+.et_pb_section {
+	padding: 0px;
+}
+
+#top-menu a:link, #top-menu a:visited, #et_top_search, .mobile_menu_bar {
+	border-top: 10px solid transparent;
+}
+
+#top-menu a:hover{
+	
+	border: 10px solid #07162e;
+	opacity: 1 !important; 	
+}
+
+.mobile_menu_bar::before {
+	color:#07162e;
+	
+}
+
+.et_mobile_menu {
+	border-top: 10px solid #07162e;
+}
+
+#mobile_menu a:hover {
+	background-color: #07162e;
+	opacity: 1 !important;
+	color: white; 
+}
+
+/* top slider */
+
+.et_pb_fullwidth_section .et_pb_slider .et_pb_slide {
+	text-align: left; 
+}
+
+.et_pb_fullwidth_section .et_pb_slider h2, .et_pb_fullwidth_section .et_pb_slider p {
+	text-shadow: 2px 2px 5px black;
+}
+
+.et_pb_fullwidth_section .et_pb_slider h2 {
+	font-size: 2em; 
+	text-transform: capitalize;
+	margin-bottom: 0.25 em; 
+	margin-top: 0.25 em; 
+}
+
+.et_pb_fullwidth_section .et_pb_slide_content {
+	width: 40%;
+	min-width: 250px; 
+}
+
+.et_pb_fullwidth_section .et_pb_slider .et_pb_container {
+	min-height: 200px;
+	padding: 100px 0px; 
+}
+
+.et_pb_fullwidth_section .et_pb_slide {
+	padding: 0px; 
+}
+
+.et_pb_fullwidth_section .et_pb_slide_description{
+	
+	width: 80%;
+	max-width: 1080px; 
+	margin:auto; 
+	padding: 0px; 
+}
+
+.et_pb_text {
+	text-align: left;
+	line-height: 1.3em;
+	font-size: 1.1em;
+	padding: 20px; 
+}
+
+.et_pb_text h2 {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.author {
+	font-weight: normal;
+	font-size: 0.7 em;
+	margin-top: 10px; 
+	display: block; 
+}
+
+.dark_box {
+	background-color: #07162e;
+}
+
+.dark_box h2 {
+	color: white; 
+}
+
+/*  Buttons */
+
+.button, .button:visited {
+	border: 1px solid #07162e;
+	color: #07162e;
+	padding: 5px 10px; 
+	font-weight: bold; 
+	font-size: 0.8 em;
+	display: inline-block;
+	margin-top: 10px; 
+	transition: 0.5s;
+}
+
+.button:hover {
+	background-color: #07162e;
+	color: white; 
+	padding: 5px 20px; 
+}
+
+.button:active {
+	text-decoration: underline; 
+}
+
+.dark_box .button {
+	background-color: #07162e;
+	border: 1px solid white; 
+	color: white; 
+}
+
+.dark_box .button:hover {
+	background-color: white;
+	color: #07162e;
+}
+
+.et_pb_slide_description {
+	position: relative;
+	height: 300px; 
+}
+
+.et_pb_slide_content {
+	position: absolute;
+	bottom: 0px; 
+	background-color: #07162e;
+	opacity: 0.8;
+	width: 115%; 
+	margin-left: -90px; 
+	padding-top: 20px; 
+	
+}
+
+
+.et_pb_fullwidth_slider_0 .et_pb_slide_content {
+	background-color: transparent;
+	position: relative;
+	width: 100%;
+	margin-left: 0px;
+	padding-top: 20px; 
+}
+
+/* media query */
+
+@media all and (max-width: 980) {
+	
+	.et_pb_fullwidth_section h2, .et_pb_fullwidth_section p {
+		text-align: left;
+	}
+}
+
