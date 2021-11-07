@@ -46,6 +46,8 @@
         <h2 id="storm-title">Report a Storm: </h2>
 
         <form action="thanks.html">
+
+            <h3 class="form-label"> Contact Information:</h3>
             <label for="name" class="labels"> Full Name: </label> <br>
             <input class="inputs" type="text" id="name" name="name" 
             pattern="[A-z\s]{5,}" title="Only accepts letters, must be over 5 characters" required> <br> <br>
@@ -58,7 +60,9 @@
 
             <label for="zip" class="labels">Zipcode:</label> <br>
             <input class="inputs" type="number" id="zip" name="zipcode" required> <br> <br>
+            <br>
 
+            <h3 class="form-label" id="top-border"> Storm Information:</h3>
             <label for="date" class="labels">Storm Date</label> <br>
             <input class="inputs" type="date" id="date" name="date"> <br> <br>
 
@@ -103,7 +107,7 @@
             <label for="text" class="labels">Additional information or comments:</label> <br>
             <textarea id="text" name="text" rows="4" cols="20" class="comments" >
                 
-            </textarea> <br> <br>
+            </textarea> <br> <br> <br> 
 
             <input type="submit" id="" name="submit" class="submit" > <br> <br>
 
