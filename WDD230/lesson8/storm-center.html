@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Weather Website">
+    <title> Weather Website Preston Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../lesson6/script.js" defer> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/weather logo.png">
+        <h1 class="bigTitle"> Night Forecasts </h1>
+        <h3 class="motto"> motto/catch phrase </h3>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="pages"> <a class="links" href="#"> Home </a> </li>
+            <li class="pages"> <a class="links" href="../lesson6/preston-6.html"> Preston </a> </li>
+            <li class="pages"> <a class="links" href="#"> Soda Springs </a> </li>
+            <li class="pages"> <a class="links" href="#"> Fish Haven </a> </li>
+            <li class="pages active"> <a class="links active" href="storm-center.html"> Storm Center </a> </li>
+            <li class="pages"> <a class="links" href="../lesson7/gallery.html"> Gallery </a> </li>
+        </ul>
+        <img class="menuButton" onclick="button()" src="images/menu.png">
+        <ul id="menu">
+            <li class="page"> <a class="link" href="#"> Home </a> </li>
+            <li class="page"> <a class="link" href="../lesson6/preston-6.html"> Preston </a> </li>
+            <li class="page"> <a class="link" href="#"> Soda Springs </a> </li>
+            <li class="page"> <a class="link" href="#"> Fish Haven </a> </li>
+            <li class="page active"> <a class="link active" href="storm-center.html"> Storm Center </a> </li>
+            <li class="page"> <a class="link" href="../lesson7/gallery.html"> Gallery </a> </li>
+            <li class="page"> <img class="x" onclick=please() src="images/x.png"></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2 id="storm-title">Report a Storm: </h2>
+
+        <form action="thanks.html">
+            <label for="name" class="labels"> Full Name: </label> <br>
+            <input class="inputs" type="text" id="name" name="name" 
+            pattern="[A-z\s]{5,}" title="Only accepts letters, must be over 5 characters" required> <br> <br>
+
+            <label for="email" class="labels"> Email: </label> <br>
+            <input class="inputs" type="email" id="email" name="email" placeholder="abcde@gmail.com"> <br> <br>
+
+            <label for="phone" class="labels"> Phone Number</label> <br>
+            <input class="inputs" type="tel" id="phone" name="phone number" required> <br> <br>
+
+            <label for="zip" class="labels">Zipcode:</label> <br>
+            <input class="inputs" type="number" id="zip" name="zipcode" required> <br> <br>
+
+            <label for="date" class="labels">Storm Date</label> <br>
+            <input class="inputs" type="date" id="date" name="date"> <br> <br>
+
+            <label for="type" class="labels">Storm Type</label> <br>
+            <input class="inputs" list="storms" id="type" name="storm type"> 
+            <datalist id="storms">
+                <option value="Flash flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option> 
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>           
+            </datalist> <br> <br>
+
+            <label for="severity" class="labels">Storm Severity (1-10)</label> <br>
+            <input class="inputs" type="range"  id="severity" name="severity" min="0" max="10" value="0" list="steps" step="1"> <br> <br>
+            <datalist id="steps">
+                <option>0</option>
+                <option>2</option>
+                <option>4</option>
+                <option>6</option>
+                <option>8</option>
+                <option>10</option>
+            </datalist>
+
+            <label for="region" class="labels">Storm Region</label> <br>
+            <select id="region" name="region" class="inputs">
+                <option value="Select region..." selected disabled> Select Region...</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+            </select><br> <br>
+
+            <label for="danger" class="labels"> Are you in danger?</label> <br> <br>
+            <input type="radio" id="danger" name="danger" value="yes" class="inputs"> 
+            <label for="danger"> Yes</label> <br>
+            <input type="radio" id="danger" name="danger" value="no" class="inputs"> 
+            <label for="danger">No</label> <br>
+            <input type="radio" id="danger" name="danger" value="maybe" class="inputs"> 
+            <label for="danger">Maybe</label> <br>
+            <br> <br>
+
+            <label for="text" class="labels">Additional information or comments:</label> <br>
+            <textarea id="text" name="text" rows="4" cols="20" class="inputs">
+                
+            </textarea> <br> <br>
+
+            <input type="submit" id="" name="submit" class="inputs" > <br> <br>
+
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <section class="contactSection">
+            <div class="contact">
+                <h3 class="title"> Contact Info </h3>
+                <p>
+                    address: <br>
+                    (280) 915-6748 <br>
+                    nightforecast@gmail.com </p>
+
+            </div>
+
+            <div class="media">
+                <img class="mediaImg" src="images/facebook-icon-png-774.png">
+                <img class="mediaImg" src="images/instagram.png">
+                <img class="mediaImg" src="images/youtube.png">
+        </section>
+
+        </div>
+
+        <div class="map">
+            <img class="mapImg" src="images/map.jpg">
+        </div>
+
+    </footer>
+
+    <div class="bar">
+        <p class="foot" id="currentYear"></p>
+    </div>
+
+</body>
+
+</html>
