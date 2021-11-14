@@ -292,6 +292,41 @@ form {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.288), 0 6px 20px 0 rgba(255, 255, 255, 0.228);
 }
 
+/* Home Page */
+
+.town_sections {
+    margin-top: 50px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; 
+}
+
+.sections {
+    text-align: center; 
+    padding: 10px; 
+    background-color:#254059;
+}
+
+.sections h3 {
+    font-size: 2.1em; 
+    margin-bottom: -10px; 
+}
+
+.subheading {
+    margin-bottom: 50px; 
+    font-style: italic; 
+}
+
+.stats {
+    text-align: left; 
+    padding-left: 17px; 
+}
+
+.town_image {
+    max-width: 100%;
+    margin-top: 20px;  
+}
+
 
 @media screen and (max-width: 900px) {
     .gallery {
@@ -352,6 +387,64 @@ form {
 
     .boxes:hover {
         box-shadow: none;
+    }
+
+     /* Home Page */
+
+     .town_sections {
+        width: 100%; 
+        margin-top: 50px; 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 20px; 
+    }
+
+    .section1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;  
+    }
+
+    .town_text {
+        max-height: 200px; 
+    }
+
+    .town1 {
+        grid-column: 2/3;
+        width: 100%; 
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        position: relative;  
+    }
+    .town2 {
+        position: absolute;
+        top: 10px;
+        left: 10px; 
+        grid-column: 1/2;
+        width: 100%; 
+    }
+    .town_text2 {
+        grid-column: 2/3;  
+        max-height: 200px; 
+    }
+
+    .section3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px; 
+    }
+    .town3 {
+        grid-column: 2/3;
+        width: 100%; 
+    }
+
+    main {
+        max-width: 90%;
     }
 
 }
@@ -453,6 +546,65 @@ form {
 
     .boxes:hover {
         box-shadow: none;
+    }
+
+    /* Home Page */
+
+    .town_sections {
+        width: 100%; 
+        margin-top: 50px; 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 20px; 
+    }
+
+    .section1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px; 
+         
+    }
+
+    .town_text {
+        max-height: 200px; 
+    }
+
+    .town1 {
+        grid-column: 2/3;
+        width: 100%; 
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        position: relative;  
+    }
+    .town2 {
+        position: absolute;
+        top: 10px;
+        left: 10px; 
+        grid-column: 1/2;
+        width: 100%; 
+    }
+    .town_text2 {
+        grid-column: 2/3;  
+        max-height: 200px; 
+    }
+
+    .section3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px; 
+    }
+    .town3 {
+        grid-column: 2/3;
+        width: 100%; 
+    }
+
+    main {
+        max-width: 90%;
     }
 
 }
@@ -590,4 +742,32 @@ form {
         height: 30px; 
         background-color:#6293D4;
     }
+
+     /* Home Page */
+
+     .town_sections {
+        width: 100%; 
+        margin-top: 50px; 
+        display: block; 
+    }
+
+    .section1 {
+        display: block; 
+        margin-top: 15px; 
+    }
+
+    .section2 {
+        display: block; 
+        margin-top: 15px;
+    }
+
+    .section3 {
+        display: block;
+        margin-top: 15px; 
+    }
+
+    .town2 {
+        position: relative; 
+    }
+
 }
