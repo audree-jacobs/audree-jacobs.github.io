@@ -767,7 +767,7 @@ form {
     }
 
     .town2 {
-        position: relative; 
+        position: static; 
     }
 
 }
