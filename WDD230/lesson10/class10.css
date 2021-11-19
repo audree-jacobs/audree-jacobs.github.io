@@ -5,17 +5,16 @@
     max-width: 30%;
     margin:auto; 
     background-image: url("https://raw.githubusercontent.com/audree-jacobs/audree-jacobs.github.io/8d4f0ea11f1f26fb0757a67923e01b10c9a3aaf5/WDD230/lesson10/Clouds.jpg");
-    background-size: cover;
-    height: 650px; 
+    background-size: cover; 
     padding-top: 20px; 
     padding: 10px; 
     border-radius: 10px; 
+    padding-bottom: 10px; 
 }
 
 
 .row {
-    position: absolute;
-    bottom: 0;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px; 
@@ -23,8 +22,7 @@
     text-align: center; 
     margin-left: 10px; 
     padding-bottom: 30px; 
-    width: 28%; 
-    margin-bottom: -20px; 
+    width: 95%; 
 }
 
 h4 {
@@ -103,7 +101,7 @@ p {
     }
 
     .row {
-        width: 83%; 
-        margin-bottom: -50px; 
+        width: 97%; 
+        margin-bottom: 10px; 
     }
 }
