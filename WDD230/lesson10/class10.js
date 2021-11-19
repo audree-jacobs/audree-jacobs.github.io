@@ -87,3 +87,77 @@ fetch(requesURL)
   });
 
 
+  // for big days
+
+// current day 
+fetch(requesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const current = jsonObject['current'];
+    const please = current.temp;
+    document.getElementById("today2").innerHTML = please; 
+  });
+
+// day 1
+fetch(requesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const daily = jsonObject['daily'];
+    const please = daily[0].temp.day;
+    document.getElementById("Day12").innerHTML = please; 
+  });
+
+// day 2
+fetch(requesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const daily = jsonObject['daily'];
+    const please = daily[1].temp.day;
+    document.getElementById("Day22").innerHTML = please; 
+  });
+
+// day 3
+fetch(requesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const daily = jsonObject['daily'];
+    const please = daily[2].temp.day;
+    document.getElementById("Day32").innerHTML = please; 
+  });
+
+// day 4 
+fetch(requesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const daily = jsonObject['daily'];
+    const please = daily[3].temp.day;
+    document.getElementById("Day42").innerHTML = please; 
+  });
+
+
+
+function highlight1() {
+        document.getElementsByClassName("light1").style.display = "block";
+        document.getElementsByClassName("light2").style.display = "none";
+        document.getElementsByClassName("light3").style.display = "none";
+        document.getElementsByClassName("light4").style.display = "none";
+        document.getElementsByClassName("light5").style.display = "none";
+};
+
+function highlight2() {
+    document.getElementsByClassName("light1").style.display = "none";
+    document.getElementsByClassName("light2").style.display = "block";
+    document.getElementsByClassName("light3").style.display = "none";
+    document.getElementsByClassName("light4").style.display = "none";
+    document.getElementsByClassName("light5").style.display = "none";
+};
