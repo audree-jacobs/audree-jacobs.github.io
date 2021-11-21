@@ -1,0 +1,107 @@
+
+
+.card {
+
+    max-width: 30%;
+    margin:auto; 
+    background-image: url("https://raw.githubusercontent.com/audree-jacobs/audree-jacobs.github.io/8d4f0ea11f1f26fb0757a67923e01b10c9a3aaf5/WDD230/lesson10/Clouds.jpg");
+    background-size: cover; 
+    padding-top: 20px; 
+    padding: 10px; 
+    border-radius: 10px; 
+    padding-bottom: 10px; 
+}
+
+
+.row {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px; 
+    margin: auto; 
+    text-align: center; 
+    margin-left: 10px; 
+    padding-bottom: 30px; 
+    width: 95%; 
+}
+
+h4 {
+    color: white; 
+}
+
+.day {
+    background-color: black; 
+    opacity: 0.5; 
+    border-radius: 10px; 
+    color: white;
+    margin-top: -14px;  
+    max-width: 100%; 
+}
+
+.icon {
+    margin-top: 20px; 
+    margin-bottom: -20px;
+    width: 40px; 
+}
+
+p {
+    padding-bottom: 14px; 
+    color: white; 
+}
+
+.light {
+    width: 50%;
+    margin:auto;
+    text-align: center; 
+    padding: 20px; 
+    padding-top: 10px; 
+    background-color: #597286; 
+    opacity: 0.7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20px !important; 
+    border-radius: 10px; 
+}
+
+.light h4 {
+    font-size: 2em; 
+    margin-bottom: -10px; 
+}
+
+.light img {
+    width: 60%; 
+    border-radius: 10px; 
+}
+
+.light p {
+    margin-top: 30px;
+    font-size: 1.2em;  
+}
+
+.light1 {
+   
+}
+
+.light2 {
+    display: none;
+}
+.light3 {
+    display: none; 
+}
+.light4 {
+    display: none; 
+}
+.light5 {
+    display: none; 
+}
+
+@media screen and (max-width: 800px) {
+   
+    .card {
+        max-width: 90%; 
+    }
+
+    .row {
+        width: 97%; 
+        margin-bottom: 10px; 
+    }
+}

@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@100&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 body {
     color: white;
@@ -66,7 +67,7 @@ header {
 .bigTitle {
     font-size: 40px;
     padding-top: 30px;
-    font-family: 'Open Sans', sans-serif; 
+    /* font-family: 'Open Sans', sans-serif; */ 
 }
 
 .motto {
@@ -119,7 +120,7 @@ main {
 h2 {
     font-size: 3vw;
     text-align: center; 
-    font-family: 'Open Sans', sans-serif; 
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 /* footer */
@@ -192,7 +193,7 @@ form {
 }
 
 .form-label {
-    font-family: 'Open Sans', sans-serif; 
+    /* font-family: 'Open Sans', sans-serif; */
     font-size:  1.6em; 
     color: #6293D4;
 }
