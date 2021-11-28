@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Weather Website">
+    <title> Weather Website Home Page</title>
+    <link rel="stylesheet" href="finalstyles.css">
+    <script src="script.js" defer> </script>
+    <script src="townapi.js" defer> </script>
+
+    <!-- Weather API code: 078c3a92b81735bd7e9ab73fe3396fad
+    instructions: https://openweathermap.org/current -->
+
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/weather logo.png">
+        <h1 class="bigTitle"> Night Forecasts </h1>
+        <h3 class="motto"> motto/catch phrase </h3>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="pages active"> <a class="links active" href="home.html"> Home </a> </li>  
+            <li class="pages"> <a class="links" href="preston.html"> Preston </a> </li>
+            <li class="pages"> <a class="links" href="sodasprings.html"> Soda Springs </a> </li>
+            <li class="pages"> <a class="links" href="fishhaven.html"> Fish Haven </a> </li>
+            <li class="pages"> <a class="links" href="stormcenter.html"> Storm Center </a> </li>
+            <li class="pages"> <a class="links" href="gallery.html"> Gallery </a> </li>
+        </ul>
+        <img class="menuButton" onclick="button()" src="images/menu.png">
+        <ul id="menu">
+            <li class="page active"> <a class="link active" href="home.html"> Home </a> </li>
+            <li class="page"> <a class="link" href="preston.html"> Preston </a> </li>
+            <li class="page"> <a class="link" href="sodasprings.html"> Soda Springs </a> </li>
+            <li class="page"> <a class="link" href="fishhaven.html"> Fish Haven </a> </li>
+            <li class="page"> <a class="link" href="stormcenter.html"> Storm Center </a> </li>
+            <li class="page"> <a class="link" href="gallery.html"> Gallery </a> </li>
+            <li class="page"> <img class="x" onclick=please() src="images/x.png"></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="town_sections">
+        <section class="section1 sections"> 
+            <div class="town_text">
+            <h3> Preston </h3>
+            <p class="subheading" id="headP"> Home of </p>
+            <p class="stats"> 
+                <span id="Pyear"> Test</span><br>
+                <span id="Ppop"> </span><br>
+                <span id="Prain"> </span><br>
+            </p>
+        </div>
+            <img class="town1 town_image" src="images/ppreston.jpg">
+            
+        </section> 
+
+        <section class="section2 sections"> 
+            <div class="town_text2">
+                <h3> Fish Haven </h3>
+                <p class="subheading" id="headF"> This is  </p>
+                <p class="stats"> 
+                    <span id="Fyear"> Test</span><br>
+                    <span id="Fpop"> </span><br>
+                    <span id="Frain"> </span><br>
+                </p>
+                </div>
+                <img class="town2 town_image" src="images/Fish Haven.jpg">
+                
+        </section>
+
+        <section class="section3 sections"> 
+            <div class="town_text">
+                <h3> Soda Springs </h3>
+                <p class="subheading" id="headS"> The soda is </p>
+                <p class="stats"> 
+                    <span id="Syear"> Test</span><br>
+                    <span id="Spop"> </span><br>
+                    <span id="Srain"> </span><br>
+                </p>
+            </div>
+                <img class="town3 town_image" src="images/Soda Springs.jpg">
+                
+        </section>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <section class="contactSection">
+            <div class="contact">
+                <h3 class="title"> Contact Info </h3>
+                <p>
+                    address: <br>
+                    (280) 915-6748 <br>
+                    nightforecast@gmail.com </p>
+
+            </div>
+
+            <div class="media">
+                <img class="mediaImg" src="images/facebook-icon-png-774.png">
+                <img class="mediaImg" src="images/instagram.png">
+                <img class="mediaImg" src="images/youtube.png">
+        </section>
+
+        </div>
+
+        <div class="map">
+            <img class="mapImg" src="images/map.jpg">
+        </div>
+
+    </footer>
+
+    <div class="bar">
+        <p class="foot" id="currentYear">Weather Website by Audrey Jacobs</p>
+    </div>
+
+</body>
+
+</html>

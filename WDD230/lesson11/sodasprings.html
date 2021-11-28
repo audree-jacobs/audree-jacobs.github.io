@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Weather Website">
+    <title> Weather Website Soda Springs Page</title>
+    <link rel="stylesheet" href="finalstyles.css">
+    <script src="api3.js" defer> </script>
+    <script src="script.js" defer> </script>
+    <script src="townapi.js" defer> </script>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/weather logo.png">
+        <h1 class="bigTitle"> Night Forecasts </h1>
+        <h3 class="motto"> motto/catch phrase </h3>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="pages"> <a class="links" href="home.html"> Home </a> </li>  
+            <li class="pages"> <a class="links" href="preston.html"> Preston </a> </li>
+            <li class="pages active"> <a class="links active" href="sodasprings.html"> Soda Springs </a> </li>
+            <li class="pages"> <a class="links" href="fishhaven.html"> Fish Haven </a> </li>
+            <li class="pages"> <a class="links" href="stormcenter.html"> Storm Center </a> </li>
+            <li class="pages"> <a class="links" href="gallery.html"> Gallery </a> </li>
+        </ul>
+        <img class="menuButton" onclick="button()" src="images/menu.png">
+        <ul id="menu">
+            <li class="page"> <a class="link" href="home.html"> Home </a> </li>
+            <li class="page"> <a class="link" href="preston.html"> Preston </a> </li>
+            <li class="page active"> <a class="link active" href="sodasprings.html"> Soda Springs </a> </li>
+            <li class="page"> <a class="link" href="fishhaven.html"> Fish Haven </a> </li>
+            <li class="page"> <a class="link" href="stormcenter.html"> Storm Center </a> </li>
+            <li class="page"> <a class="link" href="gallery.html"> Gallery </a> </li>
+            <li class="page"> <img class="x" onclick=please() src="images/x.png"></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2> Soda Springs </h2>
+
+        <div class="section1">
+            <picture>
+                <!--<source media="(max-width:580px)" srcset="https://audree-jacobs.github.io/WDD230/lesson6/images/small.jpg">
+                <source media="(max-width:760px)" srcset="https://audree-jacobs.github.io/WDD230/lesson6/images/medium.jpg">-->
+                <img class="hero" src="images/Soda Springs Long.jpg" alt="soda springs" >
+            </picture>
+
+            <div class="weatherSum">
+                <h3 class="title"> Weather Summary</h3>
+                <p class="summaryLeft">
+                    Currently: <br>
+                    High: <br>
+                    Low: <br>
+                    Wind: <br>
+                    Humidity: <br>
+                    Wind Chill: 
+                </p>
+                <section class="summaryRight">
+                    <br> 
+                    <span id="currentTemp">  </span>° <br>
+                    <span id="high"> </span>° <br>
+                    <span id="low"> </span>° <br>
+                    <span id="wind">  </span> mph <br>
+                    <span id="humidity"> </span>% <br>
+                    <span id="windchill"></span>°
+                </section>
+            </div>
+        </div>
+
+        <section class="forecast">
+            <h3 class="title"> Five Day Forecast</h3>
+            <section class="forecastDays">
+
+                <div class="monday">
+                    <p class="day">
+                        Monday
+                    </p>
+                    <img class="icon" id="icon1" src="">
+                    <p id="temp1">  </p>
+                </div>
+
+                <div class="tuesday">
+                    <p class="day">
+                        Tuesday
+                    </p>
+                    <img class="icon" id="icon2" src="">
+                    <p id="temp2">  </p>
+                </div>
+
+
+                <div class="wednesday">
+                    <p class="day">
+                        Wednesday
+                    </p>
+                    <img class="icon" id="icon3" src="">
+                    <p id="temp3">  </p>
+                </div>
+
+                <div class="thursday">
+                    <p class="day">
+                        Thursday
+                    </p>
+                    <img class="icon" id="icon4" src="">
+                    <p id="temp4">  </p>
+                </div>
+
+                <div class="friday">
+                    <p class="day">
+                        Friday
+                    </p>
+                    <img class="icon" id="icon5" src="">
+                    <p id="temp5">  </p>
+                </div>
+
+
+            </section>
+        </section>
+
+        <div class="article">
+            <h3 class="title"> Star Gazing in Soda Springs </h3>
+            <h4 class="author"> by Emilio Regino </h4>
+            <img class="articleImg" id="annoying" src="images/stars.jpg">
+            <p class="articleText"> Soda Springs is the ideal desination for star gazing for the truly 
+            astronomically inclined, due to the incredibly low light pollution out in this farm country that 
+            allows for beautifully clear views of the night sky.  Enjoy the stunning sweep of the milkyway, or 
+            bring a telescope to pick out your faovirte stars and planets.  Located high in the Northern Hemisphere, 
+            Soda Springs has unmatched views of Orion in the winter months 
+                ...</p> <br> <br>
+                <a class="continue"> continue reading article </a>
+
+        </div>
+
+        <div class="events">
+
+            <h3 id="event_title"> Upcoming events:</h3>
+            <p class="event_content">
+
+                <span id="event1S"></span> <br>
+                <span id="event2S"></span> <br> 
+                <span id="event3S"></span>
+
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <section class="contactSection">
+            <div class="contact">
+                <h3 class="title"> Contact Info </h3>
+                <p>
+                    address: <br>
+                    (280) 915-6748 <br>
+                    nightforecast@gmail.com </p>
+
+            </div>
+
+            <div class="media">
+                <img class="mediaImg" src="images/facebook-icon-png-774.png">
+                <img class="mediaImg" src="images/instagram.png">
+                <img class="mediaImg" src="images/youtube.png">
+        </section>
+
+        </div>
+
+        <div class="map">
+            <img class="mapImg" src="images/map.jpg">
+        </div>
+
+    </footer>
+
+    <div class="bar">
+        <p class="foot" id="currentYear">Weather Website by Audrey Jacobs</p>
+    </div>
+
+</body>
+
+</html>
