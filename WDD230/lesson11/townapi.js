@@ -11,35 +11,35 @@ fetch(requestURL)
   .then(function (jsonObject) {
     
     //preston
-    const towns = jsonObject['towns'];
-    const year = towns[6].yearFounded;
-    const pop = towns[6].currentPopulation;
-    const rain = towns[6].averageRainfall;
+    let towns = jsonObject['towns'];
+    let year = towns[6].yearFounded;
+    let pop = towns[6].currentPopulation;
+    let rain = towns[6].averageRainfall;
     document.getElementById('Pyear').innerHTML = "Year Founded: " + year;
     document.getElementById("Ppop").innerHTML = "Current Population: " + pop;
     document.getElementById("Prain").innerHTML = "Annual Rainfall: " + rain; 
 
     // Fish Haven
-    const year2 = towns[2].yearFounded;
-    const pop2 = towns[2].currentPopulation;
-    const rain2 = towns[2].averageRainfall;
+    let year2 = towns[2].yearFounded;
+    let pop2 = towns[2].currentPopulation;
+    let rain2 = towns[2].averageRainfall;
     document.getElementById('Fyear').innerHTML = "Year Founded: " + year2;
     document.getElementById('Fpop').innerHTML = "Current Population: " + pop2;
     document.getElementById('Frain').innerHTML = "Annual Rainfall: " + rain2; 
 
     //Soda Springs
-    const year3 = towns[0].yearFounded;
-    const pop3 = towns[0].currentPopulation;
-    const rain3 = towns[0].averageRainfall;
+    let year3 = towns[0].yearFounded;
+    let pop3 = towns[0].currentPopulation;
+    let rain3 = towns[0].averageRainfall;
     document.getElementById('Syear').innerHTML = "Year Founded: " + year3;
     document.getElementById('Spop').innerHTML = "Current Population: " + pop3;
     document.getElementById('Srain').innerHTML = "Annual Rainfall: " + rain3;
 
 
     // mottos 
-    const motto1 = towns[0].motto;
-    const motto2 = towns[2].motto;
-    const motto3 = towns[6].motto;
+    let motto1 = towns[0].motto;
+    let motto2 = towns[2].motto;
+    let motto3 = towns[6].motto;
     document.getElementById('headP').innerHTML = motto3; 
     document.getElementById('headF').innerHTML = motto2;
     document.getElementById('headS').innerHTML = motto1;  

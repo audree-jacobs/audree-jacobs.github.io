@@ -1,5 +1,7 @@
 /// normal site functions 
 
+
+// mobile menu functions
 function button() {
     document.querySelector('#menu').style.display = "block";
 }
@@ -9,7 +11,8 @@ function please() {
 }
 
 
-//funciton to retrieve current year (for the footer)
+
+//function to retrieve current year (for the footer)
 function currentYear() {
     var today = new Date();
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
