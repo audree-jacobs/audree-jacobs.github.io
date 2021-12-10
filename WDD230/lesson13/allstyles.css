@@ -1,0 +1,145 @@
+
+/* All Pages Styles */
+
+/* sans serif font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+/* serif body copy */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+/*heading font */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+/* italics heading font */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap');
+
+/* Colors
+Dark beige: #A88C80
+Tan: #E8D8C1;
+Red: 7E1E1E;
+*/
+
+body {
+    background-color: rgb(126, 30, 30); 
+    padding: 0px;
+    margin: 0px; 
+    font-family: 'Karla', sans-serif; 
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'IM Fell DW Pica', serif;
+    /* font-style: italic; */
+}
+
+/* navigations */
+.mobile_nav {
+    display: none; 
+}
+.desktop_nav {
+    padding-top: 10px;
+    padding-bottom: 10px;  
+}
+.desktop_nav .nav_link {
+    display: inline; 
+    padding-left: 35px; 
+    font-size: 1.2em; 
+}
+.desktop_nav a {
+    color: white; 
+    text-decoration: none; 
+}
+.desktop_nav a:hover {
+    color: rgb(223, 171, 171); 
+}
+
+
+/* HomePage Styles */
+
+.hero_image {
+    max-width: 100%; 
+    position: relative; 
+    
+}
+
+h1 {
+    color: white; 
+    position: absolute;
+    top: 30%; 
+    padding-left: 75px; 
+    font-size: 5vw;
+    opacity: 0.5;
+}
+
+/* mood ring section */
+
+.beige_div {
+    background-color: #A88C80;
+    padding: 50px 0px 50px 0px;
+    margin-top: -5px; 
+}
+
+.mood_ring_div {
+    background-color: #E8D8C1;
+    display: grid;
+    grid-template-columns: 17% 1fr 1fr 20%;
+    width: 100%;
+    margin: auto; 
+    place-items: center; 
+    padding: 15px 0px 28px 0px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ring_images {
+    width: 80%; 
+    grid-column: 2/3;  
+}
+
+.glow_ring {
+    display: none;
+    width: 85%;  
+    padding-bottom: 4px; 
+}
+
+.regular_ring {
+    width: 85%;  
+}
+
+.ring_images:hover .glow_ring{
+    display: block;
+}
+
+.ring_images:hover .regular_ring {
+    display: none; 
+}
+
+.mood_ring_text {
+    grid-column: 3/4; 
+    font-size: 1.5em; 
+}
+
+.mood_ring_text p {
+    margin-top: -10px !important;  
+    font-size: 0.95em; 
+}
+
+
+
+/* tablet */ 
+
+
+
+
+
+/* mobile */
+
+@media screen and (max-width: 560px) {
+    
+    .mobile_nav {
+        display: block; 
+    }
+    .desktop_nav {
+        display: none; 
+    }
+
+}
