@@ -38,7 +38,8 @@ h3 {
 
 footer {
     color: white; 
-    background-image: url()
+    background-image: url(https://audree-jacobs.github.io/WDD230/lesson13/images/scarf.png);
+    background-size: cover; 
 }
 
 /* navigations */
