@@ -38,9 +38,24 @@ h3 {
 
 footer {
     color: white; 
+    height: 130px; 
     background-image: url(https://audree-jacobs.github.io/WDD230/lesson13/images/scarf.png);
     background-size: cover; 
+    background-position: 0% 0%;
+    margin-top: -60px; 
 }
+
+.footer_info {
+    padding-top: 45px; 
+    text-align: right;
+    padding-right: 80px;  
+}
+
+.footer_info p {
+    margin-bottom: -10px; 
+}
+
+
 
 /* navigations */
 .mobile_nav {
@@ -184,7 +199,7 @@ h1 {
 
 .tan {
     background-color: #E8D8C1;
-    padding: 50px 0px 50px 0px; 
+    padding: 50px 0px 80px 0px; 
 }
 
 .beige {
