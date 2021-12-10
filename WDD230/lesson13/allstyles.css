@@ -27,9 +27,18 @@ p {
     font-family: 'EB Garamond', serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h4, h5 {
     font-family: 'IM Fell DW Pica', serif;
     /* font-style: italic; */
+}
+
+h3 {
+    font-size: 2.3em; 
+}
+
+footer {
+    color: white; 
+    background-image: url()
 }
 
 /* navigations */
@@ -115,14 +124,97 @@ h1 {
 
 .mood_ring_text {
     grid-column: 3/4; 
-    font-size: 1.5em; 
 }
 
 .mood_ring_text p {
     margin-top: -10px !important;  
-    font-size: 0.95em; 
+    font-size: 1.3em; 
 }
 
+/* Red Painting Section */
+
+.paintings_section {
+
+    padding: 30px; 
+}
+
+.paintings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%; 
+    width: 80%; 
+    margin: auto;
+    padding: 30px 0px 30px 0px; 
+}
+
+.paintings img {
+    width: 100%; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.521), 0 6px 20px 0 rgba(0, 0, 0, 0.418);
+}
+
+.paintings img:hover {
+    box-shadow: 0 4px 8px 0 rgba(250, 225, 225, 0.89), 0 6px 20px 0 rgba(241, 189, 189, 0.89);
+}
+
+
+.paintings_section h3 {
+    color: white; 
+    font-size: 2.3em; 
+    margin-left: 10%; 
+    max-width: 60%;  
+    font-family: 'Karla', sans-serif; 
+    font-weight: 100;
+    margin-bottom: 0px; 
+    padding-top: 30px; 
+}
+
+.paintings_section p {
+    color: white; 
+    font-size: 1em; 
+    margin-left: 40%; 
+    max-width: 50%;  
+    font-family: 'Karla', sans-serif; 
+    font-weight: 100;
+    text-align: right; 
+    padding-bottom: 30px; 
+}
+
+/* suggestion section */
+
+.tan {
+    background-color: #E8D8C1;
+    padding: 50px 0px 50px 0px; 
+}
+
+.beige {
+    background-color: #A88C80;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.521), 0 6px 20px 0 rgba(0, 0, 0, 0.418);
+    display: grid;
+    grid-template-columns: 22% 1fr 1fr 20%;
+    padding: 30px 0px 30px 0px; 
+    place-items: left; 
+}
+
+.beige img {
+    margin-top: 10%;
+    margin-bottom: 10%; 
+    width: 80%;
+    grid-column: 3/4;
+    margin-left: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.363), 0 6px 20px 0 rgba(0, 0, 0, 0.281);
+}
+
+.suggestion_text {
+    grid-column: 2/3; 
+    text-align: left; 
+    padding-right: 30px; 
+    padding-top: 40px; 
+}
+
+.suggestion_text h3 {
+   font-size: 2.2em; 
+   margin-bottom: 20px; 
+}
 
 
 /* tablet */ 
