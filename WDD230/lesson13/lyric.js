@@ -57,7 +57,7 @@ fetch(requestURL)
         document.getElementById('moodRing').setAttribute('src', green);
         document.getElementById("mood").style.color = "green";
     } else if (albums == "Lover") {
-        document.getElementById('mood').innerHTML =  "Misunderstood";
+        document.getElementById('mood').innerHTML =  "Vunerable";
         document.getElementById('moodRing').setAttribute('src', pink);
         document.getElementById("mood").style.color = "#852473";
     } else if (albums == "Folklore") {
