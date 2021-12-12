@@ -372,14 +372,133 @@ h1 {
 
 .contact_link a {
     text-decoration: none; 
-    color: white; 
+    color: rgb(255, 148, 148); 
 }
 
 .contact_link a:hover {
     text-decoration: none; 
-    color: rgb(207, 149, 149); 
+    color: rgb(12, 8, 8); 
 }
 
+/* Painting Page */ 
+
+.grid {
+    max-width: 80%;
+    margin: auto; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px; 
+    padding-bottom: 40px; 
+    padding-top: 40px; 
+}
+
+.grid img {
+    width: 100%; 
+}
+
+.paintt {
+    color: white; 
+    text-align: center;
+    padding: 20px; 
+}
+
+.grid2{
+    background-color: white; 
+    max-width: 100%;
+    margin: auto; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; 
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 40px; 
+}
+
+.span {
+    grid-column: 1/4; 
+    text-align: center; 
+}
+
+.paint_top {
+    background-color: #E8D8C1;
+    padding: 50px;
+    text-align: center; 
+}
+
+.paint_top a {
+    text-decoration: none; 
+    color: rgb(189, 37, 37);
+
+}
+
+.paint_top a:hover { 
+    color: rgb(255, 255, 255);
+}
+
+.paint_top p {
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+}
+
+.paint_top h3 {
+    margin: 10px;
+}
+
+/* suggestions page */
+
+.tantop {
+    padding: 30px; 
+    padding-left: 80px; 
+    color: white; 
+}
+
+.short_form {
+    background-color: #E8D8C1;
+    max-width: 70%;
+    margin: auto;
+    padding: 20px; 
+    font-size: 2em;  
+    margin-top: 50px;
+    margin-bottom: 50px;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dark {
+    background-color: #A88C80;
+    padding: 40px; 
+}
+
+input {
+    font-size: 0.7em; 
+}
+
+.contact_link h3 {
+    color: white; 
+    font-size: 2em; 
+    text-align: center;
+    padding: 50px;
+}
+
+.long_form {
+    background-color: #E8D8C1;
+    max-width: 70%;
+    margin: auto;
+    padding: 20px; 
+    font-size: 1.5em;  
+    margin-top: 50px;
+    margin-bottom: 50px;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.thankyou {
+    color: white; 
+    text-align: center;
+    padding: 40px; 
+    font-size: 1.5em; 
+    padding-bottom: 250px;
+}
 
 
 /* tablet */ 
@@ -393,6 +512,12 @@ h1 {
     .footer_info {
         padding-right: 50px;
     }
+    .grid2 {
+        display: block; 
+        padding: 0px;
+        padding-top: 20px; 
+    }
+
 }
 
 
@@ -544,5 +669,25 @@ h1 {
 
     #bottom {
         padding: 35px; 
+    }
+
+    /* Painting Page */
+
+    .grid2 {
+        display: block; 
+        padding: 0px;
+        padding-top: 20px; 
+    }
+
+    .grid {
+        display: block;
+    }
+
+    .long_form {
+        max-width: 80%;
+    }
+
+    .short_form {
+        max-width: 90%;
     }
 }
