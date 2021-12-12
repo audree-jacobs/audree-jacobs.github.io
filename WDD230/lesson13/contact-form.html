@@ -6,11 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Taylor Swift's Mood Ring">
     <link rel="stylesheet" href="allstyles.css">
-    <script src="" defer> </script>
+    <script src="basic.js" defer> </script>
     <title> Contact Form </title>
     <link rel="icon" href="images/red ring finished.png" sizes="16x16" type="image/png">
 </head>
 <body>
+    <main>
+        <!--  desktop navigation  -->
+        <ul class="desktop_nav"> 
+          <li class="nav_link"> <a href="index.html"> home </a> </li>
+          <li class="nav_link"> <a href="moodring.html">mood ring </a> </li>
+          <li class="nav_link"> <a href="paint.html"> aesthetics </a> </li>
+          <li class="nav_link"> <a class="active" href="suggestions.html"> make a suggestion </a> </li>
+      </ul>
+  
+      <!--  mobile navigation  -->
+      <h2 class="siteTitle"> mood ring </h2>
+      <h2 class="mobile_icon" onclick="mobile()"> = </h2>
+      <ul id="mobile_nav"> 
+          <li class="nav_link"> <a href="index.html"> home </a> </li>
+          <li class="nav_link"> <a href="moodring.html">mood ring </a> </li>
+          <li class="nav_link"> <a href="paint.html"> aesthetics </a> </li>
+          <li class="nav_link"> <a class="active" href="suggestions.html"> suggestions </a> </li>
+      </ul>
+
+
+      <form class="long_form" action="thankyou.html"> 
+
+            <label for="name" class="labels"> *Full Name: </label> <br>
+            <input class="inputs" type="text" id="name" name="name" 
+            pattern="[A-z\s]{5,}" title="Only accepts letters, must be over 5 characters" required> <br> <br>
+
+            <label for="email" class="labels"> *Email: </label> <br>
+            <input class="inputs" type="email" id="email" name="email" placeholder="abcde@gmail.com" required> <br> <br>
+
+            <label for="phone" class="labels"> Phone Number</label> <br>
+            <input class="inputs" type="tel" id="phone" name="phone number" > <br> <br>
+
+            <label for="danger" class="labels"> What do you want to contact us about?</label> <br> <br>
+            <input type="radio" id="danger" name="contact" value="site issues" required> 
+            <label for="contact"> Issues with the site </label> <br>
+            <input type="radio" id="danger" name="contact" value="questions"> 
+            <label for="contact"> Questions about the AI </label> <br>
+            <input type="radio" id="danger" name="contact" value="creator"> 
+            <label for="contact"> Contact the designer </label> <br>
+            <input type="radio" id="danger" name="contact" value="other"> 
+            <label for="contact"> Other </label> <br> 
+            <br> <br>
+
+            <label for="text" class="labels">Additional Comments:</label> <br>
+            <textarea id="text" name="text" rows="4" cols="20" class="comments" >
+                
+            </textarea> <br> <br> <br> 
+
+            <input type="submit" id="" name="submit" class="submit" > <br> <br>
+
+
+
+      </form>    
+  
+      
+      </main>
+      
+      <footer> 
+          <div class="footer_info">
+              <p> website created by Audrey Jacobs 2021 </p>
+              <p> last updated: <span id="updated"> </span> </p> 
+          </div>
+      </footer>
     
 </body>
 </html>
