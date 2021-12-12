@@ -23,6 +23,13 @@ body {
     font-family: 'Karla', sans-serif; 
 }
 
+.logo {
+    max-width: 35px; 
+    float: right; 
+    padding-right: 30px; 
+    margin-top: -7px; 
+}
+
 p {
     font-family: 'EB Garamond', serif;
 }
