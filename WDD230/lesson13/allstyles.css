@@ -62,8 +62,7 @@ footer {
 
 
 /* navigations */
-#mobile_nav {
-    display: none;  
+#mobile_nav {  
     position: relative;
     z-index: 5;
 }
