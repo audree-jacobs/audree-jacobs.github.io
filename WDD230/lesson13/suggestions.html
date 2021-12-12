@@ -6,11 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Taylor Swift's Mood Ring">
     <link rel="stylesheet" href="allstyles.css">
-    <script src="" defer> </script>
+    <script src="basic.js" defer> </script>
     <title> Make a Suggestion </title>
     <link rel="icon" href="images/red ring finished.png" sizes="16x16" type="image/png">
 </head>
 <body>
+    <main>
+      <!--  desktop navigation  -->
+      <ul class="desktop_nav"> 
+        <li class="nav_link"> <a href="index.html"> home </a> </li>
+        <li class="nav_link"> <a href="moodring.html">mood ring </a> </li>
+        <li class="nav_link"> <a href="paint.html"> aesthetics </a> </li>
+        <li class="nav_link"> <a class="active" href="suggestions.html"> make a suggestion </a> </li>
+    </ul>
+
+    <!--  mobile navigation  -->
+    <h2 class="siteTitle"> mood ring </h2>
+    <h2 class="mobile_icon" onclick="mobile()"> = </h2>
+
+    <ul id="mobile_nav"> 
+        <li class="nav_link"> <a href="index.html"> home </a> </li>
+        <li class="nav_link"> <a href="moodring.html">mood ring </a> </li>
+        <li class="nav_link"> <a href="paint.html"> aesthetics </a> </li>
+        <li class="nav_link"> <a class="active" href="suggestions.html"> suggestions </a> </li>
+    </ul>
+
+
+    <div class="">
+        <form class="short_form" action="thankyou.html"> 
+            <label for="text" class="labels">Send in your suggestion here:</label> <br>
+            <textarea id="text" name="text" rows="4" cols="20" class="comments" required></textarea> <br> <br> <br> 
+            <input type="submit" id="" name="submit" class="submit" > <br> <br>
+        </form>
+    </div> 
+    
+    <div class="contact_link">
+        <h3> Or <a href="contact-form.html"> contact us directly </a> and we'll reach out to you </h3>
+        
+    </div>
+
+    </main>
+
+    <footer> 
+        <div class="footer_info">
+            <p> website created by Audrey Jacobs 2021 </p>
+            <p> last updated: <span id="updated"> </span> </p> 
+        </div>
+    </footer>
+    
     
 </body>
 </html>

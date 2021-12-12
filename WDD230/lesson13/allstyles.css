@@ -36,12 +36,17 @@ h3 {
     font-size: 2.3em; 
 }
 
+main {
+    position: relative; 
+}
+
 footer {
     color: white; 
     height: 130px; 
     background-image: url(https://audree-jacobs.github.io/WDD230/lesson13/images/scarf.png);
     background-size: cover; 
     background-position: 0% 0%;
+    max-width: 100%; 
     margin-top: -60px; 
 }
 
@@ -56,11 +61,27 @@ footer {
 }
 
 
-
 /* navigations */
-.mobile_nav {
+#mobile_nav {
+    display: none;  
+    position: relative;
+    z-index: 5;
+}
+
+.siteTitle {
     display: none; 
 }
+
+#mobile_nav li {
+    display: inline; 
+    padding-right: 15px; 
+}
+
+#mobile_nav li a {
+    text-decoration: none; 
+    color: white; 
+}
+
 .desktop_nav {
     padding-top: 10px;
     padding-bottom: 10px;  
@@ -78,6 +99,14 @@ footer {
     color: rgb(223, 171, 171); 
 }
 
+.active {
+    color: #9DBDB8 !important;
+    font-weight: bold; 
+} 
+
+.mobile_icon {
+    display: none; 
+}
 
 /* HomePage Styles */
 
@@ -94,6 +123,7 @@ h1 {
     padding-left: 75px; 
     font-size: 5vw;
     opacity: 0.5;
+    z-index: 1; 
 }
 
 /* mood ring section */
@@ -122,12 +152,12 @@ h1 {
 
 .glow_ring {
     display: none;
-    width: 85%;  
+    width: 85%;
     padding-bottom: 4px; 
 }
 
 .regular_ring {
-    width: 85%;  
+    width: 85%;
 }
 
 .ring_images:hover .glow_ring{
@@ -140,6 +170,15 @@ h1 {
 
 .mood_ring_text {
     grid-column: 3/4; 
+}
+
+.mood_ring_text h3:hover{
+    color:rgb(126, 30, 30);
+}
+
+.mood_ring_text a {
+    text-decoration: none; 
+    color: black; 
 }
 
 .mood_ring_text p {
@@ -195,6 +234,14 @@ h1 {
     padding-bottom: 30px; 
 }
 
+.paintings_section p:hover {
+    color:rgba(241, 189, 189, 0.89);
+}
+
+.paintings_section a {
+    text-decoration: none; 
+}
+
 /* suggestion section */
 
 .tan {
@@ -220,6 +267,10 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.363), 0 6px 20px 0 rgba(0, 0, 0, 0.281);
 }
 
+.beige img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.801), 0 6px 20px 0 rgba(0, 0, 0, 0.87);
+}
+
 .suggestion_text {
     grid-column: 2/3; 
     text-align: left; 
@@ -233,21 +284,266 @@ h1 {
 }
 
 
+/* Mood Ring Page */
+
+.feeling {
+    max-width: 100%;
+    padding-left: 80px;
+    padding-right: 80px; 
+    background-color: #E8D8C1;
+    padding-top: 30px;
+    padding-bottom: 40px; 
+    text-align: center;
+}
+
+.feeling h4 {
+    font-size: 2.5em;    
+    display: inline;
+}
+
+.feeling p {
+    font-size: 1.5em;
+    margin-bottom: 10px; 
+    display: inline;
+}
+
+#top {
+    padding-left: 0px;
+}
+
+.bold {
+    font-weight: bold; 
+}
+
+#song {
+    display: inline; 
+    text-align: center;
+}
+
+#album {
+    display: inline; 
+    text-align: center;
+}
+
+#mood {
+    display:inline;
+    text-align: center; 
+}
+
+#moodRing {
+    max-width: 25%;
+    margin-left: 35%;
+}
+
+#moodRing:hover {
+    border-radius: 50%; 
+    box-shadow: 0 0px 80px 0 rgba(240, 231, 231, 0.19), 0 0px 80px 0 rgba(240, 231, 231, 0.19);
+    background-color: rgba(240, 231, 231, 0.19);
+}
+
+.reload {
+    color: rgba(241, 189, 189, 0.89);
+    text-align: right;
+    padding-right: 50px; 
+    margin-top: -30px;
+    padding-bottom: 15px; 
+}
+
+#mood_footer{
+    margin-top: -100px; 
+}
+
+.spacer {
+    background-color: #A88C80; 
+    height: 100px; 
+    margin-bottom: 0px; 
+}
+
+.spotify {
+    margin-top: 50px; 
+    padding: 30px 10% 80px 10%; 
+    color: white; 
+    font-size: 1em; 
+    font-weight: 100;
+    margin-bottom: 60px; 
+}
+
+/* Suggestions Page */
+
+
+.contact_link a {
+    text-decoration: none; 
+    color: white; 
+}
+
+.contact_link a:hover {
+    text-decoration: none; 
+    color: rgb(207, 149, 149); 
+}
+
+
+
 /* tablet */ 
 
+@media screen and (max-width: 970px) {
+    footer {
+        background-image:none;
+        padding-top: 60px; 
+    }
 
+    .footer_info {
+        padding-right: 50px;
+    }
+}
 
 
 
 /* mobile */
 
-@media screen and (max-width: 560px) {
-    
-    .mobile_nav {
-        display: block; 
+@media screen and (max-width: 620px) {
+
+    .mobile_icon {
+        display: block;  
+        padding-right: 30px; 
+        font-size: 3em;
+        color: white; 
+        font-family: sans-serif; 
+        padding: 0px; 
+        margin: 5px; 
+        padding-left: 85%;
     }
+
+    .siteTitle {
+        display: inline;
+        margin: 0px;  
+        padding: 12.5px;
+        padding-left: 15px;  
+        float: left; 
+        font-size: 1.3em;
+        color:rgba(250, 225, 225, 0.89)
+    }
+
+    h1 {
+        font-size: 12vw; 
+        max-width: 100%;
+        padding-left: 25px;
+        margin: auto; 
+        top: 150px; 
+        z-index: 1;
+    }
+
+    .hero_image {
+        max-width: 200%;
+        margin-left: -190px; 
+    }
+
+    .hero {
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    footer {
+        color: white; 
+        background-image:none;
+        max-width: 100%; 
+        position: relative; 
+        font-size: 0.8em;
+        padding-top: 0px; 
+    }
+
+    
+    .footer_info {
+        padding-top: 60px; 
+        text-align: right;
+        padding-right: 50px; 
+        padding-bottom: 30px; 
+    }
+    
+    .footer_info p {
+        margin-bottom: -10px; 
+    }
+
     .desktop_nav {
         display: none; 
     }
 
+    /* Home Page */
+
+    .beige {
+        display: block;
+    }
+    
+    .mood_ring_div {
+        display: block; 
+        text-align: center;
+        font-size: 1em; 
+        width: 100%; 
+    }
+
+    .mood_ring_text {
+        max-width: 100%;
+        padding: 50px; 
+        padding-top: 0px; 
+        margin-top: -30px; 
+    }
+
+    .ring_images {
+        max-width: 60%; 
+    }
+
+    .glow_ring {
+        width: 50%;
+        margin:auto; 
+    }
+    
+    .regular_ring {
+        width: 50%;
+    }
+
+    .paintings {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr; 
+    }
+
+    .paintings_section p {
+        text-align: left; 
+        margin: auto;
+        padding-top: 30px; 
+        max-width: 85%; 
+    }
+
+    .suggestion_text {
+        max-width: 70%;
+        margin:auto; 
+        text-align: center; 
+        padding-right: 0px; 
+    }
+
+    .beige img {
+        margin: auto; 
+        display: block; 
+        margin-top: 20px;
+        margin-bottom: 20px; 
+    }
+
+    /* Mood Ring Page */
+
+    #moodRing {
+        max-width: 60%;
+        margin-left: 20%;
+    }
+
+    .reload {
+        padding-right: 15px; 
+        padding-bottom: 5px; 
+        padding-top: 20px; 
+    }
+
+    #top {
+        padding-left: 80px;
+    }
+
+    #bottom {
+        padding: 35px; 
+    }
 }
