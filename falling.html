@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Portfolio</title>
+    <link href="falling.css" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"  defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
+    <script src="falling.js" defer></script>
+</head>
+<body>
+    <div class="menuIcon" onclick="menuOpen()">
+        <p> menu </p>
+    </div>
+
+    <div class="menu" onclick="menuClose()">
+        <div>
+        <a href="#"> home </a> <br>
+        <a href="#contactid"> contact </a><br>
+        <a href="#myworkid"> my work </a><br>
+        <a href="#aboutmeid"> about me </a>
+        </div>
+    </div>
+
+    <section class="section1">
+        <img class="background" src="/images/stars 2.png">
+        <img class="avatar" src="/images/white space.png"> 
+        <a class="push" href="#" onclick="startFall()"> PUSH </a>
+        <img class="platform" src="/images/platform purple.png">
+        <img class="star1" src="/images/star 1.png"> 
+        <img class="planet" src="/images/pink planet.png">
+        <img class="saturn" src="/images/saturn white.png"> 
+        <div class="planetText">
+        <h1> AUDREY JACOBS</h1>
+        <h2> <a class="tag" href="#web">Front End Web Developer</a> <br> <a class="tag" href="#ux">UX/UI Designer</a> </h2>
+        </div>
+        <div class="arrow"> 
+            <img src="/images/arrow.png"> 
+        </div>
+        <img class="cloud1" src="/images/loud 2.png"> 
+        <img class="cloud2" src="/images/loud 1.png"> 
+    </section> 
+    <img class="fallingAvatar" src="/images/falling avatar.png"> 
+    <section class="section2">
+        <img class="cloud3" src="/images/loud 3.png"> 
+        <img class="cloud4" src="/images/loud 4.png"> 
+        <img class="cloud5" src="/images/loud 5.png"> 
+        <img class="mountain" src="/images/mountain long.png"> 
+        <img class="cabin" src="/images/cabin 2.png" onmouseover="glow()" onmouseleave="noGlow()" onclick="cabinText()">
+        <div class="yellowGlow"> <p> </p></div>
+        <!-- <img class="glowCabin" src="/images/cabin glow.png"> !-->
+        <div class="cabinBox" onclick="cabinText2()">
+            <h3> Places I'm from: </h3>
+            <p> 
+                I was born in Alaska, grew up in Connecticut,
+                & then attended Brigham Young University Idaho from 2017-2022 
+                  
+            </p>
+        </div>
+        <h2 class="title1" id="aboutmeid"> About Me </h2>
+        <img id="ux" class="ski" src="/images/skier.png" onmouseenter="glow2()" onmouseleave="noGlow2()" onclick="skiText()">
+        <div class="skiBox" onclick="skiText2()">
+            <h3> My Skills: </h3>
+            <p> 
+               <strong>Front-End Coding:</strong> HTML5, CSS, SCSS, Javascript, Github  <br> <br> 
+                <strong> UX/UI:</strong> Figma Mockups, Adobe Illustrator, Graphic Design, Digital Photography   
+            </p>
+        </div>
+    </section>
+    <section class="section3" id="web">
+        <img class="city" src="/images/cityscape.png">
+        <img class="shadow" src="/images/shadow.png"> 
+
+        <h3 class="title2" id="myworkid"> Website Design </h3>
+
+        <h3 class="heading1"> <a href="https://addterra.github.io/preview/home.html" target="_blank"> IN4.0S Internship Website Build: </a> </h3>
+        <div class="cover1" onclick="raise()"></div>
+        <img class="hand1" src="/images/hand.png" onclick="raise()">
+        <img class="web1" src="/images/In40s website.png" onclick="lower()"> 
+        <div class="webText1" onclick="text1gone()">
+            <h4>
+                Spring 2022 Associate Web Developer
+            </h4>
+            <p> 
+                I was hired to make this website for the company IN4.0S. Working with a team of three 
+                interns we created this site from scratch in three months. My roles were in creating 
+                the design in mockups and then creating all of the front end code to execute the site 
+                (HTML CSS and Javascript files) by myself. 
+            </p>
+        </div>
+
+        <h3 class="heading2"> <a href="https://audree-jacobs.github.io/WDD230/lesson10/preston-10.html" target="_blank"> Weather Website with API: </a> </h3>
+        <div class="cover2" onclick="raise2()"></div>
+        <img class="hand2" src="/images/hand.png" onclick="raise2()">
+        <img class="web2" src="/images/weather site.png" onclick="lower2()"> 
+        <div class="webText2" onclick="text2gone()">
+            <h4>
+                Working with API's 
+            </h4>
+            <p> 
+                I created this website for a class, in order to learn how to access and 
+                read from an API with Javascript.  The weather forecasts are taken from an 
+                API and continually updated with the correct information.  I also created the 
+                design for this website myself.  
+            </p>
+        </div>
+
+        <h3 class="heading3"> <a href="https://tote-bags-by.audreynicolejacobs.com" target="_blank"> Business Website (Wordpress): </a> </h3>
+        <div class="cover3" onclick="raise3()"></div>
+        <img class="hand3" src="/images/hand.png" onclick="raise3()">
+        <img class="web3" src="/images/business site.png" onclick="lower3()"> 
+        <div class="webText3" onclick="text3gone()">
+            <h4>
+                Building Wordpress Sites 
+            </h4>
+            <p> 
+                This is a functioning business website I created for a tote bag business. This site was 
+                createdwith Wordpress, using Woocommerce business plugins and customized CSS that I wrote 
+                to create my own design instead of using a template.   
+            </p>
+        </div>
+
+    </section>
+    <section class="section4" id="contactid">
+            <img class="finalSection" src="/images/final section.png">
+            <h3 class="title3"> Contact Me </h3>
+            <h3 class="contactButton" onclick="contact()"> Contact </h3>
+            <div class="contactInfo">
+                <p>
+                    email: audreynj13@gmail.com
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/audrey-jacobs-byui2022/"> linkedin </a>
+                </p>
+            </div>
+            <img class="fruitCart" src="/images/fruit base.png">
+            <img class="topFruits" src="/images/top fruits.png"> 
+
+    </section>
+    <section class="foot">
+        <p> website design and illustrations by Audrey Jacobs </p>
+    </section>
+
+</body>
+</html>

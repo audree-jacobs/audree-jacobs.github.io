@@ -1,0 +1,760 @@
+
+/* useful links  https://stackoverflow.com/questions/16363029/responsive-images-positioned-over-image */
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    margin:0; 
+    position: relative; 
+    background-color: #539ccb; 
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    color: rgb(223, 223, 223); 
+    font-size: 4vw; 
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 2vw; 
+    margin-top: 0px;
+    color: rgb(22, 22, 22); 
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.menuIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    border-radius: 50%;
+    width: 5vw;
+    aspect-ratio: 1/1; 
+    background-color:rgb(22, 22, 22);
+    z-index: 101; 
+}
+
+.menu {
+    position: fixed;
+    bottom: -220px;
+    right: -220px;
+    z-index: 101; 
+    border-radius: 50%;
+    background-color: black;
+    width: 200px; 
+    aspect-ratio: 1/1;
+    text-align: center; 
+    padding: 20px; 
+    font-family: 'Raleway', sans-serif; 
+}
+
+.menu div {
+    width: 50%;
+    height: 60%;
+    margin: auto; 
+    margin-top: 28%; 
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+}
+
+.menu a:hover {
+    color: orange;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.menuIcon p {
+    display: block; 
+    text-align: center;
+    padding-top: 0.5vw; 
+    padding-left: 9px; 
+    padding-right: 10px;
+    color: rgb(255, 255, 255); 
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2vw; 
+}
+
+.menuIcon:hover p {
+    color: rgb(255, 175, 240); 
+    text-decoration: none; 
+    padding-left: 9px; 
+    padding-right: 10px; 
+    cursor: pointer;
+}
+
+.menuIcon:hover {
+    cursor: pointer;
+}
+
+.tag {
+    text-decoration: none; 
+    color: rgb(22, 22, 22); 
+}
+
+.tag:hover {
+    color:rgb(223, 223, 223);
+}
+
+.section1 {
+    position: fixed;
+    z-index: 100; 
+    width: 100%;
+    min-height: 100vh;
+    height: 200vh; 
+    overflow: hidden; 
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(84, 156, 204) 30%,  rgb(3, 38, 83) 100%); 
+    margin-bottom: -55px; 
+}
+
+.background {
+    width: 35%;
+    z-index: 0; 
+    position: absolute;
+    top: 5vh;
+    left: 13vw;  
+    display: none; 
+}
+
+.avatar {
+    height: 55vh; 
+    position: absolute;
+    z-index: 1; 
+    top: 30.5vh;
+    left: 17vw; 
+}
+
+.platform {
+    height: 10vh;
+    position: absolute;
+    top: 80vh; 
+    z-index: 0; 
+    left: 15.1vw; 
+}
+
+.star1 {
+    height: 20vh;
+    position: absolute;
+    top: 80vh; 
+    z-index: 1; 
+    left: 3vw; 
+    display: none; 
+}
+
+.push {
+    position: absolute;
+    height: 10vh;
+    width: 60.5vh; 
+    top: 83.4vh;
+    z-index: 1;
+    left: 15.1vw; 
+    color: white; 
+    text-decoration: none; 
+    font-family: 'Righteous', cursive;
+    text-align: right; 
+    font-size: 1.3vw; 
+}
+
+.push:hover {
+    color: black; 
+    font-weight: bold;  
+}
+
+.planet {
+    width: 100%; 
+    position: absolute;
+    top: -50vh;
+    left: 50vw;  
+}
+
+.planetText {
+    width: 40%;
+    position: absolute;
+    top: 20vh;
+    left: 60vw; 
+}
+
+.arrow {
+    position: absolute;
+    width: 16%;
+    top: 55vh;
+    left: 60vw;
+    opacity: 0; 
+}
+
+.arrow img {
+    width: 8%; 
+    height: 80px; 
+}
+
+.arrow p {
+    font-size: 1.3em; 
+    padding-bottom: 10px;
+    padding-left: 5px; 
+    margin-bottom: 0px; 
+}
+
+.saturn {
+    width: 34%; 
+    position: absolute;
+    top: -5vh;
+    left: -5vw;  
+}
+
+.cloud1 {
+    position: absolute;
+    width: 30%;
+    top: 130vh; 
+    left: 40%; 
+}
+
+.cloud2 {
+    position: absolute;
+    width: 20%;
+    top: 160vh; 
+    left: 90%; 
+}
+
+
+/* section 2 */
+
+.section2 {
+    height: auto;
+    background-color: #6eb8da00; 
+    position: relative;
+    z-index: 8;
+    max-width: 100%; 
+    overflow: hidden;  
+    margin-top: -30vh; 
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(169, 160, 223) 0%,  rgb(84, 156, 204) 100%); 
+}
+
+.cloud3 {
+    position: absolute;
+    width: 40%;
+    top: 10vh; 
+    left: 70%; 
+    z-index: -20; 
+}
+.cloud4 {
+    position: absolute;
+    width: 20%;
+    top: 60vh; 
+    left: 90%; 
+    z-index: -20; 
+}
+.cloud5 {
+    position: absolute;
+    width: 10%;
+    top: 15vh; 
+    left: 90%; 
+    z-index: -20; 
+}
+
+.fallingAvatar {
+    position: sticky !important; 
+    top: 30vh; 
+    left: 10vw;
+    width: 15%; 
+    z-index: 101;
+    opacity: 0; 
+}
+
+.mountain {
+    max-width: 100%;
+    position: relative;
+    margin-top: 70vh;  
+    z-index: -11; 
+}
+
+.glowCabin {
+    position: absolute; 
+    right: 11vw; 
+    top: 55vh; 
+    z-index: 10; 
+    width: 30vh; 
+    opacity: 0; 
+}
+
+.cabin {
+    position: absolute; 
+    right: 11vw; 
+    top: 55vh; 
+    z-index: 10; 
+    width: 30vh; 
+}
+
+.yellowGlow {
+    position: absolute; 
+    right: 16vw; 
+    top: 71vh; 
+    border-radius: 50%;
+    z-index: 9; 
+    width: 13vh; 
+    aspect-ratio: 1/1; 
+    background-color: rgba(255, 188, 63, 0.626);
+    box-shadow: 0 4px 40px 10px rgba(255, 198, 74, 0.676), 0 6px 40px 10px rgba(255, 188, 63, 0.708);
+}
+
+.cabinBox {
+    max-width: 20%; 
+    background-color: rgba(161, 74, 11, 0.719); 
+    color: white; 
+    position: absolute;
+    right: 27vw; 
+    top: 310px; 
+    z-index: 11; 
+    border-radius: 10px; 
+    padding: 15px; 
+    display: none; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.cabinBox:hover {
+    cursor: pointer; 
+}
+
+.title1 {
+    position: absolute;
+    right: 40vw; 
+    top: 35vw;
+    z-index: 11; 
+    font-size: 3vw; 
+    font-weight: 100; 
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.ski {
+    position: absolute; 
+    right: 10vw; 
+    top: 100vh; 
+    z-index: 10; 
+    width: 20%; 
+}
+
+.skiBox {
+    max-width: 20%; 
+    background-color: rgba(83, 43, 158, 0.719); 
+    color: white; 
+    position: absolute; 
+    right: 40vw; 
+    top: 40vw;
+    z-index: 11; 
+    border-radius: 10px; 
+    padding: 15px;
+    display: none; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.skiBox:hover {
+    cursor: pointer; 
+}
+
+/* section 3 */
+
+.section3 {
+    position: relative;
+    height: 120vw; 
+    z-index: 8; 
+    background: rgb(199,176,213);
+    background: linear-gradient(0deg, rgba(204,159,201,1) 0%, rgba(199,176,213,1) 100%);
+    margin-top: -5px; 
+}
+
+.city {
+    width: 100%;
+    position: relative;
+    display: inline; 
+    margin-top: -55vh; 
+    z-index: 9; 
+
+}
+
+.shadow {
+    position: absolute; 
+    margin-top: -55vh;
+    top: 40.5%; 
+    right: 30%; 
+    z-index: 8; 
+    max-width: 5vw; 
+}
+
+.heading1 {
+    position: absolute; 
+    top: -130px; 
+    left: 20%; 
+    z-index: 10; 
+
+    /* trying again */
+    position: absolute; 
+    margin-top: -55vh;
+    top: 13.2%; 
+    left: 19.5%; 
+    z-index: 10; 
+    max-width: 36vw; 
+    font-size: 2vw; 
+    
+}
+
+.heading2 {
+    position: absolute; 
+    top: 285px; 
+    left: 20%; 
+    z-index: 10; 
+
+    /* trying again */
+    position: absolute; 
+    margin-top: -55vh;
+    top: 41%; 
+    left: 19%; 
+    z-index: 10; 
+    max-width: 36vw; 
+    font-size: 2vw; 
+}
+
+.heading3 {
+
+    color: white; 
+
+    /* trying again */
+    position: absolute; 
+    margin-top: -55vh;
+    top: 65%; 
+    right: 7%; 
+    z-index: 10; 
+    font-size: 2vw;
+}
+
+h3 a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+}
+
+h3 a:hover {
+    color: rgb(15, 5, 29); 
+}
+
+.web1 {
+    position: absolute; 
+    margin-top: -55vh;
+    top: 17.2%; 
+    left: 19.5%; 
+    z-index: 10; 
+    max-width: 36vw; 
+}
+
+.cover1 {
+    position: absolute; 
+    margin-top: -55vh;
+    top: 17.2%; 
+    left: 19.5%; 
+    z-index: 11; 
+    width: 36vw; 
+    height: 24.5vw; 
+    background-color: rgba(53, 53, 53, 0.555); 
+}
+
+.hand1 {
+    position: absolute; 
+    top: -4%; 
+    left: 32%; 
+    z-index: 12; 
+    width: 10vw;
+    opacity: 0.6; 
+}
+
+.hand1:hover {
+    cursor: pointer; 
+}
+
+.cover1:hover {
+    cursor: pointer;
+}
+.cover2:hover {
+    cursor: pointer;
+}
+.cover3:hover {
+    cursor: pointer;
+}
+
+.webText1 {
+    background-color:#9e96c9;
+    color: black;
+    width: 30%; 
+    border-radius: 10px; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw; 
+    display: none;   
+    padding: 15px; 
+
+    /* trying again */
+    position: absolute; 
+    margin-top: -55vh;
+    top: 16.7%; 
+    left: 61.2%; 
+    z-index: 10; 
+    max-width: 30vw; 
+    
+}
+
+.webText1 h4 {
+    font-size: 2vw; 
+}
+
+.webText1:hover {
+    cursor: pointer;
+    opacity: 0.85; 
+}
+
+.webText2:hover {
+    cursor: pointer; 
+    opacity: 0.85; 
+}
+
+.webText3:hover {
+    cursor: pointer; 
+    opacity: 0.85; 
+}
+
+.web2 {
+    /* try again */
+    position: absolute; 
+    margin-top: -55vh;
+    top: 46%; 
+    left: 19.6%; 
+    z-index: 10; 
+    max-width: 36vw;  
+}
+
+.webText2 {
+    background-color:#b8a6d0;
+    color: rgb(0, 0, 0);
+    width: 25%; 
+    border-radius: 10px; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw;
+    position: absolute; 
+    top: 418px; 
+    left: 60.8%; 
+    z-index: 10; 
+    padding: 15px; 
+    display: none; 
+}
+
+.webText2 h4 {
+    font-size: 2vw; 
+    padding-bottom: 0px; 
+    margin-top: 5px; 
+}
+
+.cover2 {
+    /* try again */
+    position: absolute; 
+    margin-top: -55vh;
+    top: 46%; 
+    left: 19.6%; 
+    z-index: 11; 
+    width: 36vw; 
+    height: 23vw; 
+    background-color: rgba(53, 53, 53, 0.822); 
+}
+
+.hand2 {
+    position: absolute; 
+    top: 25%; 
+    left: 32%; 
+    z-index: 12; 
+    width: 10vw; 
+    opacity: 0.6; 
+}
+
+.web3 {
+
+    /* trying again */
+    position: absolute; 
+    margin-top: -55vh;
+    top: 70.5%; 
+    right: 3.3%; 
+    z-index: 10; 
+    max-width: 30vw; 
+
+}
+
+.webText3 {
+    background-color:#1d1824;
+    color: rgb(255, 255, 255);
+    border-radius: 10px; 
+    font-family: 'Raleway', sans-serif;
+    padding: 15px; 
+    font-size: 1.3vw;
+    display: none; 
+
+    /* trying again */
+    position: absolute; 
+    margin-top: -55vh;
+    top: 70.5%; 
+    left: 29.5%; 
+    z-index: 10; 
+    width: 30vw; 
+    
+}
+
+.webText3 h4 {
+    font-size: 2vw; 
+    padding-bottom: 0px; 
+}
+
+.heading3 a {
+    color: white;
+}
+
+.heading3 a:hover {
+    color: rgb(186, 128, 219);
+}
+
+.cover3 {
+    background-color: rgba(53, 53, 53, 0.712); 
+
+    /* trying again */
+    position: absolute; 
+    margin-top: -55vh;
+    top: 70.5%; 
+    right: 3.3%; 
+    z-index: 11; 
+    height: 19.5vw;
+    width: 30vw;
+}
+
+.hand3 {
+    opacity: 0.6;
+
+    /* trying again */
+    position: absolute; 
+    margin-top: -55vh;
+    top: 74%; 
+    right: 14%; 
+    z-index: 12; 
+    width: 10vw;
+}
+
+.hand3:hover {
+    cursor: pointer; 
+}
+
+.hand2:hover {
+    cursor: pointer; 
+}
+
+/*  final section */
+
+.section4 {
+    position: relative; 
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 0vh; 
+}
+
+.finalSection {
+    width: 100%; 
+    position: relative;
+    display: inline; 
+    margin-bottom: -3vh; 
+}
+
+.fruitCart {
+    position: absolute;
+    top: 54vh; 
+    left: 5vw;
+    width: 25%; 
+    margin-bottom: -3vh;
+}
+
+.topFruits {
+    position: absolute;
+    top: 54vh; 
+    left: 5vw;
+    width: 25%; 
+    z-index: 200; 
+    opacity: 0;  
+    margin-bottom: -3vh;
+}
+
+.contactInfo {
+    position: absolute;
+    top: 53vh; 
+    left: 46vw;
+    z-index: 10; 
+    width: 14vw;
+    background-color:#4e64af;
+    color: rgb(255, 255, 255); 
+    text-align: left; 
+    font-family: 'Raleway', sans-serif;
+    padding: 10px; 
+}
+
+.contactInfo a {
+    color: white;
+    text-decoration: none; 
+}
+
+.contactInfo a:hover {
+    color: black; 
+}
+
+.contactButton {
+    position: absolute;
+    top: 58vh; 
+    right: 8vw;
+    z-index: 10; 
+    font-size: 1.8vw; 
+    color: white; 
+}
+
+.contactButton:hover {
+    color: rgb(122, 189, 235);
+    cursor: pointer; 
+}
+
+.title2 {
+    position: absolute; 
+    margin-top: -55vh;
+    top: 3%; 
+    left: 43%; 
+    z-index: 10; 
+    font-size: 2.5vw;  
+}
+
+.title3 {
+    position: absolute;
+    top: -10vh; 
+    left: 45vw;
+    z-index: 10; 
+    color: rgb(55, 9, 66);
+    font-size: 2.5vw;
+}
+
+.foot {
+    padding: 10px; 
+    background-color: #0e0e0e;
+    color: rgb(206, 206, 206);
+    text-align: center;
+    max-width: 100%; 
+    font-size: 1.5vw; 
+}
