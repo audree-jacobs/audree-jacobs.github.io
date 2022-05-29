@@ -2,3 +2,85 @@
 body{
     background-color: rgb(216, 191, 234); 
 }
+
+.button {
+    border: 1px solid black; 
+    width: fit-content;
+    padding: 3px; 
+    display:inline;  
+    background-color:rgb(224, 206, 237); 
+}
+
+input {
+    display: inline;
+    font-size: 1.2em;
+}
+
+.button:hover {
+    cursor: pointer; 
+    background-color:rgb(184, 126, 225); 
+}
+
+.checkbox {
+    width: 15px;
+    min-width: 15px; 
+    min-height: 15px; 
+    height: 15px; 
+    background-color:rgb(203, 63, 63); 
+    display: inline-block; 
+    margin-left: 10px; 
+    box-sizing: border-box; 
+    margin-right: 60%; 
+}
+
+.class {
+    display: block; 
+}
+
+div {
+    padding-top: 10px;
+    padding-bottom: 0;  
+}
+
+.inputTask {
+    display: inline;
+    padding: 5px;
+    font-size: 1.2em;  
+}
+
+p {
+    display: inline; 
+    width: 10px;
+}
+
+section {
+    width: fit-content;
+    margin: auto; 
+    background-color: white;
+    padding: 20px; 
+    margin-top: 8%; 
+}
+
+.clear:hover {
+    cursor: pointer; 
+}
+
+.clear {
+    color: red; 
+}
+
+.buttons div {
+    display: inline; 
+    width: fit-content; 
+    padding-right: 10px; 
+}
+
+.buttons p {
+    display: inline; 
+    width: fit-content;
+    padding: 5px;  
+}
+
+.active {
+
+}
