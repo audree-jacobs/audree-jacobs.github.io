@@ -1,6 +1,7 @@
 
 body{
     background-color: rgb(216, 191, 234); 
+    font-family: sans-serif;
 }
 
 .button {
@@ -13,7 +14,11 @@ body{
 
 input {
     display: inline;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    border: none; 
+    background-color:rgb(238, 227, 242); 
+    padding: 5px; 
+    color: green; 
 }
 
 .button:hover {
@@ -22,15 +27,16 @@ input {
 }
 
 .checkbox {
-    width: 15px;
-    min-width: 15px; 
-    min-height: 15px; 
-    height: 15px; 
-    background-color:rgb(203, 63, 63); 
+    width: 20px;
+    min-width: 20px; 
+    min-height: 20px; 
+    height: 20px; 
+    background-color:rgb(177, 148, 186); 
     display: inline-block; 
-    margin-left: 10px; 
     box-sizing: border-box; 
-    margin-right: 60%; 
+    margin-left: auto; 
+    border-radius: 50%; 
+    margin-right: 20px;   
 }
 
 .class {
@@ -40,12 +46,15 @@ input {
 div {
     padding-top: 10px;
     padding-bottom: 0;  
+    display: flex; 
+    align-items: center; 
 }
 
 .inputTask {
     display: inline;
     padding: 5px;
     font-size: 1.2em;  
+    width: fit-content; 
 }
 
 p {
@@ -59,14 +68,22 @@ section {
     background-color: white;
     padding: 20px; 
     margin-top: 8%; 
+    margin-bottom: 50px; 
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .clear:hover {
     cursor: pointer; 
+    font-weight: 600; 
 }
 
 .clear {
-    color: red; 
+    color: rgb(13, 168, 83); 
+}
+
+.buttons {
+    display: block; 
 }
 
 .buttons div {
@@ -81,6 +98,36 @@ section {
     padding: 5px;  
 }
 
-.active {
+.tasks {
+    display: block; 
+}
 
+.exit {
+    font-weight: 700; 
+}
+
+.exit:hover{
+    cursor: pointer;
+}
+
+.checkbox:hover{
+    cursor: pointer;
+}
+
+.complete:hover {
+    cursor: pointer; 
+    color: purple; 
+    font-weight: 600; 
+}
+
+.incomplete:hover {
+    cursor: pointer; 
+    color: purple; 
+    font-weight: 600; 
+}
+
+.All:hover {
+    cursor: pointer;
+    color: purple; 
+    font-weight: 600; 
 }

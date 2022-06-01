@@ -8,7 +8,7 @@
     <link rel='stylesheet' href='todo.css'>
     <script src="todo.js"  defer></script>
     <script src="ls.js" defer></script>
-    <script src="utilities.js" defer></script>
+    <!-- <script src="utilities.js" defer></script> -->
 
 </head>
 <body>
@@ -20,25 +20,23 @@
 
             <div class="task" id="addNew"> 
                 <input class="input" type="text" placeholder="Add New Task">
-                <p class="button" onclick="addNewItem()"> ADD </p>
+                <p class="button" onclick="addTask()"> ADD </p>
             </div>
 
         </div>
 
         <div class="buttons">
 
-            <p class="number"> </p> <p class="left">tasks left</p> <br> <br>  
-
-            <div class="All">
-                <p class="active" onclick="Active1()"> All </p>
+            <div class="All" onclick="displayAll()">
+                <p class="active"> All </p>
             </div>
 
-            <div class="complete">
-                <p onclick="Active2()"> Complete </p>
+            <div class="complete" onclick="filterForComplete()">
+                <p> Complete </p>
             </div>
 
-            <div class="incomplete">
-                <p onclick="Active3()"> Incomplete </p>
+            <div class="incomplete" onclick="filterForIncomplete()">
+                <p> Incomplete </p>
             </div>
 
             <div class="clear" onclick="clearAll()">
