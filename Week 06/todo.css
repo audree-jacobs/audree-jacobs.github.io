@@ -1,0 +1,133 @@
+
+body{
+    background-color: rgb(216, 191, 234); 
+    font-family: sans-serif;
+}
+
+.button {
+    border: 1px solid black; 
+    width: fit-content;
+    padding: 3px; 
+    display:inline;  
+    background-color:rgb(224, 206, 237); 
+}
+
+input {
+    display: inline;
+    font-size: 1.1em;
+    border: none; 
+    background-color:rgb(238, 227, 242); 
+    padding: 5px; 
+    color: green; 
+}
+
+.button:hover {
+    cursor: pointer; 
+    background-color:rgb(184, 126, 225); 
+}
+
+.checkbox {
+    width: 20px;
+    min-width: 20px; 
+    min-height: 20px; 
+    height: 20px; 
+    background-color:rgb(177, 148, 186); 
+    display: inline-block; 
+    box-sizing: border-box; 
+    margin-left: auto; 
+    border-radius: 50%; 
+    margin-right: 20px;   
+}
+
+.class {
+    display: block; 
+}
+
+div {
+    padding-top: 10px;
+    padding-bottom: 0;  
+    display: flex; 
+    align-items: center; 
+}
+
+.inputTask {
+    display: inline;
+    padding: 5px;
+    font-size: 1.2em;  
+    width: fit-content; 
+}
+
+p {
+    display: inline; 
+    width: 10px;
+}
+
+section {
+    width: fit-content;
+    margin: auto; 
+    background-color: white;
+    padding: 20px; 
+    margin-top: 8%; 
+    margin-bottom: 50px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.clear:hover {
+    cursor: pointer; 
+    font-weight: 600; 
+}
+
+.clear {
+    color: rgb(13, 168, 83); 
+}
+
+.buttons {
+    display: block; 
+}
+
+.buttons div {
+    display: inline; 
+    width: fit-content; 
+    padding-right: 10px; 
+}
+
+.buttons p {
+    display: inline; 
+    width: fit-content;
+    padding: 5px;  
+}
+
+.tasks {
+    display: block; 
+}
+
+.exit {
+    font-weight: 700; 
+}
+
+.exit:hover{
+    cursor: pointer;
+}
+
+.checkbox:hover{
+    cursor: pointer;
+}
+
+.complete:hover {
+    cursor: pointer; 
+    color: purple; 
+    font-weight: 600; 
+}
+
+.incomplete:hover {
+    cursor: pointer; 
+    color: purple; 
+    font-weight: 600; 
+}
+
+.All:hover {
+    cursor: pointer;
+    color: purple; 
+    font-weight: 600; 
+}

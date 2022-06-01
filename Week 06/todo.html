@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Project</title>
+    <link rel='stylesheet' href='todo.css'>
+    <script src="todo.js"  defer></script>
+    <script src="ls.js" defer></script>
+    <!-- <script src="utilities.js" defer></script> -->
+
+</head>
+<body>
+
+    <section>
+        <h1> To Do List:</h1>
+
+        <div class="tasks">
+
+            <div class="task" id="addNew"> 
+                <input class="input" type="text" placeholder="Add New Task">
+                <p class="button" onclick="addTask()"> ADD </p>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <div class="All" onclick="displayAll()">
+                <p class="active"> All </p>
+            </div>
+
+            <div class="complete" onclick="filterForComplete()">
+                <p> Complete </p>
+            </div>
+
+            <div class="incomplete" onclick="filterForIncomplete()">
+                <p> Incomplete </p>
+            </div>
+
+            <div class="clear" onclick="clearAll()">
+                <p> Clear </p>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
