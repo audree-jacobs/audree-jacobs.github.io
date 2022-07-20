@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner App</title>
+    <script src="planner.js" defer> </script>
+    <link rel="stylesheet" href="planner.css">
+</head>
+<body>
+    
+    <p class="alert"> please view this app on a phone screen size </p> 
+
+    <section class="opening_screen"  onclick = "goHome()";>
+
+    <h1> Welcome </h1>
+    <h2> to your daily planner! </h2>
+
+    <img src="images/opening screen image.png"> 
+
+    <p class="time"> </p>
+    <p class="date"> </p>
+
+    </section>
+
+    <section  class="home_screen">
+
+        <div class="header">  </div>
+
+        <div class="title_section"> <p> Today </p> </div>
+
+
+        <div class="event_columns">
+
+            <ul class="hours">
+                <li>5:00 AM </li>
+                <li>6:00 AM </li>
+                <li>7:00 AM </li>
+                <li>8:00 AM </li>
+                <li>9:00 AM </li>
+                <li>10:00 AM </li>
+                <li>11:00 AM </li>
+                <li>12:00 PM </li>
+                <li>1:00 PM </li>
+                <li>2:00 PM </li>
+                <li>3:00 PM </li>
+                <li>4:00 PM </li>
+                <li>5:00 PM </li>
+                <li>6:00 PM </li>
+                <li>7:00 PM </li>
+                <li>8:00 PM </li>
+                <li>9:00 PM </li>
+                <li>10:00 PM </li>
+                <li>11:00 PM </li>
+                <li>12:00 AM </li>
+                <li>1:00 AM </li>
+                <li>2:00 AM </li>
+                <li>3:00 AM </li>
+                <li>4:00 AM </li>
+            </ul>
+
+        </div>
+
+        <h3 class="end_day"> End of Day </h3>
+
+        <p class="edit_button" onclick="goEdit()"> Edit Schedule </p>
+
+        <div class="footer_menu"> 
+            <div class="home_button"onclick="goHome()"> <img src="images/Home.png">  </div>
+            <div class="edit" onclick="goEdit()"> <img src="images/Edit.png"> </div>
+            <div class="add_button" onclick="goAdd()"> <img src="images/Add.png"> </div>
+            <div class="auto_button"> <img src="images/Magic.png"> </div>
+        </div>
+
+    </section>
+
+    <section  class="edit_screen">
+
+        <div class="header">  </div>
+        <div class="title_section"> <p> Edit Schedules </p> </div>
+
+        <div class="event_columns" id="edit_events">
+
+            <ul class="hours">
+                <li>5:00 AM </li>
+                <li>6:00 AM </li>
+                <li>7:00 AM </li>
+                <li>8:00 AM </li>
+                <li>9:00 AM </li>
+                <li>10:00 AM </li>
+                <li>11:00 AM </li>
+                <li>12:00 PM </li>
+                <li>1:00 PM </li>
+                <li>2:00 PM </li>
+                <li>3:00 PM </li>
+                <li>4:00 PM </li>
+                <li>5:00 PM </li>
+                <li>6:00 PM </li>
+                <li>7:00 PM </li>
+                <li>8:00 PM </li>
+                <li>9:00 PM </li>
+                <li>10:00 PM </li>
+                <li>11:00 PM </li>
+                <li>12:00 AM </li>
+                <li>1:00 AM </li>
+                <li>2:00 AM </li>
+                <li>3:00 AM </li>
+                <li>4:00 AM </li>
+            </ul>
+
+            <div class="add_event" onclick="goAdd()"> 
+                <img src="images/Add.png"> 
+                <h3> Add Event </h3>
+            </div>
+
+        </div>
+
+        <p class="submit_button" onclick="submit()"> Submit </p>
+        <p class="cancel_button"> Cancel </p>
+
+
+        <div class="footer_menu"> 
+            <div class="home_button" onclick="goHome()"> <img src="images/Home.png">  </div>
+            <div class="edit" onclick="goEdit()"> <img src="images/Edit.png"> </div>
+            <div class="add_button" onclick="goAdd()"> <img src="images/Add.png"> </div>
+            <div class="auto_button"> <img src="images/Magic.png"> </div>
+        </div>
+    </section>
+
+    <section  class="add_screen">
+
+        <div class="header">  </div>
+        <div class="title_section"> <p> Add Event </p> </div>
+
+        <form class="add_event_form">
+
+            <input class="title_input" type="text" placeholder="Title of the Event">
+            <p class="start_time"> Start Time of the Event</p> 
+            <input class="time_input" type="time" step="3600"> 
+
+            <p class="start_time"> Length of the Event (Hours) </p>
+            <input class="length_input" type="range" list="tickmarks">
+            <datalist id="tickmarks">
+            <option value="0" label="0"></option>
+            <option value="10" label="1"></option>
+            <option value="20" label="2"></option>
+            <option value="30" label="3"></option>
+            <option value="40" label="4"></option>
+            <option value="50" label="5"></option>
+            <option value="60" label="6"></option>
+            <option value="70" label="7"></option>
+            <option value="80" label="8"></option>
+            <option value="90" label="9"></option>
+            <option value="100" label="10"></option>
+            </datalist>
+
+            <p class="submit_button" onclick="collectEvent()"> Submit </p>
+            <p class="cancel_button" onclick="goHome()"> Cancel </p>
+
+        </form>
+
+
+        <div class="footer_menu"> 
+            <div class="home_button" onclick="goHome()"> <img src="images/Home.png">  </div>
+            <div class="edit" onclick="goEdit()"> <img src="images/Edit.png"> </div>
+            <div class="add_button" onclick="goAdd()"> <img src="images/Add.png"> </div>
+            <div class="auto_button"> <img src="images/Magic.png"> </div>
+        </div>
+    </section>
+
+    <section  class="auto_screen">
+
+
+    </section>
+
+    
+</body>
+</html>

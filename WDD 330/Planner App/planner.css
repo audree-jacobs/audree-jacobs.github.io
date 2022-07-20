@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+
+/* colors: 
+
+light blue: #BFECE1; 
+mid blue: #60A393; 
+dark blue: #2E5F4D;
+dark brown: #6B5546; 
+pink: #E38787; 
+tan: #C6A58F; 
+
+*/
+
+html {
+    background-color: white; 
+    width: 100%;
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    background-color: #60A393;  
+    width: 100vw; 
+    min-height: 900px; 
+    max-width: 450px;
+    /* max-height: 900px;  */ 
+    margin: 0; 
+    margin: auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.alert {
+    text-align: left;
+    position: absolute;
+    left: 10px; 
+    top: 10px; 
+    color: #60A393; 
+    font-size: 1.2em; 
+}
+
+.footer_menu {
+    position: sticky; 
+    height: 11vh; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    max-width: 100vw; 
+    background-color: #60A393; 
+    padding-top: 10px; 
+}
+
+.footer_menu div {
+    border-radius: 100%;
+    background-color: white; 
+    width: 70px;
+    height: 70px;  
+    aspect-ratio: 1/1;  
+    text-align: center;  
+    display: inline-block;
+    margin-left: 4.5vw; 
+}
+
+.footer_menu img {
+    width: 50%;
+    margin: auto; 
+    margin-top: 25%;  
+}
+
+/* opening screen styles */
+
+.opening_screen {
+    color: white; 
+    font-family: "Quicksand", sans-serif; 
+    text-align: center; 
+    box-sizing: border-box;
+    padding: 30px; 
+    padding-top: 0px; 
+    height: fit-content; 
+}
+
+.opening_screen h1 {
+    font-size: 4em;
+    margin-bottom: 0; 
+    font-weight: 600; 
+    color: #2E5F4D; 
+}
+
+.opening_screen h2 {
+    margin-top: 10px; 
+    font-weight: 400;
+    font-size: 2em;
+    width: 80%;
+    margin: auto;  
+}
+
+.opening_screen .time {
+    font-size: 4em;
+    margin-bottom: 0;
+    margin-top: 0;  
+    font-weight: 600; 
+    color: #2E5F4D; 
+}
+
+.opening_screen .date {
+    font-size: 2em;
+    margin-top: 0;  
+}
+
+.opening_screen img {
+    width: 100%; 
+}
+
+/* header and footer styles for every screen */
+
+.header {
+    background-color: #60A393;  
+    height: 12vh; 
+    width: 100%; 
+    position: sticky; 
+    top: 0; 
+    z-index: 10; 
+}
+
+.title_section {
+    background-color: #BFECE1; 
+    height: 8vh; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 40px; 
+    text-align: center; 
+    position: sticky; 
+    top: 12vh;
+    z-index: 10; 
+}
+
+.title_section p {
+    margin-top: 0; 
+    padding-top: 10px; 
+    font-size: 2em; 
+}
+
+/* home screen styles */
+
+.home_screen {
+    text-align: left; 
+    font-family: "Quicksand", sans-serif; 
+    box-sizing: border-box;
+    padding: 0px; 
+    padding-top: 0px; 
+    width: 100%; 
+    display: none; 
+    position: relative; 
+}
+
+.hours {
+    list-style-type: none; 
+    padding: 0px; 
+    padding-left: 20px; 
+    box-sizing: border-box; 
+    width: 100%; 
+    display: inline-block;
+    grid-column: 1/2;  
+    margin-top: 0px; 
+    grid-row: 1/3; 
+    height: fit-content; 
+}
+
+li {
+    padding-bottom: 30px; 
+    font-size: 1.2em; 
+    font-weight: 600; 
+    color: #2E5F4D; 
+}
+
+.event_columns {
+    display: grid; 
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 140vh;
+    height: fit-content;  
+}
+
+.event {
+    width: 90%; 
+    height: fit-content; 
+    padding-left: 15px;   
+    background-color: #6B5546; 
+    grid-column: 2/3; 
+    border-radius: 15px; 
+    color: white; 
+    box-sizing: border-box; 
+    grid-row: 1/2; 
+    padding: 10px; 
+}
+
+.event h3 {
+    margin-bottom: 0px; 
+    margin-top: 0px; 
+}
+
+.event p {
+    margin-top: 8px; 
+}
+
+.end_day {
+    text-align: center; 
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    color: #2E5F4D;
+    border-top: 2px solid #2E5F4D; 
+    padding-top: 10px; 
+}
+
+.edit_button {
+    width: 50%; 
+    margin:auto; 
+    padding: 10px; 
+    font-size: 1.5em; 
+    text-align: center; 
+    background-color: #2E5F4D; 
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 10vh; 
+}
+
+
+/* edit schedule page */ 
+
+.edit_screen {
+    display: none; 
+    text-align: left; 
+    font-family: "Quicksand", sans-serif; 
+    box-sizing: border-box;
+    padding: 0px; 
+    padding-top: 0px; 
+    /* height: fit-content;  */ 
+    width: 100%; 
+    display: none;
+}
+
+.add_event {
+    grid-column: 2/3; 
+    margin-top: 0px; 
+    display: inline; 
+    position: absolute; 
+    background-color: #2E5F4D; 
+    width: 63%; 
+    left: 30%; 
+    min-height: 50px;
+    height: fit-content; 
+    padding-left: 15px;   
+    border-radius: 15px; 
+    color: white; 
+    box-sizing: border-box; 
+}
+
+.add_event h3 {
+    width: 60%; 
+    display: inline; 
+    position: absolute; 
+    top: 10px; 
+    left: 50px; 
+    font-size: 1.2em; 
+    margin: 0; 
+}
+
+.add_event img {
+    filter: brightness(0) invert(1);
+    display: inline; 
+    margin-top: 10px; 
+}
+
+
+
+/* add event page */ 
+
+.add_screen {
+    display: none; 
+    display: none; 
+    text-align: left; 
+    font-family: "Quicksand", sans-serif; 
+    box-sizing: border-box;
+    padding: 0px; 
+    padding-top: 0px; 
+    /* height: fit-content;  */ 
+    width: 100%; 
+    display: none;
+}
+
+.add_event_form {
+    height: 70vh; 
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 20px; 
+}
+
+.submit_button {
+    width: 30%; 
+    margin: auto; 
+    padding: 10px; 
+    font-size: 1.5em; 
+    text-align: center; 
+    background-color: #2E5F4D; 
+    border-radius: 30px;
+    color: white;
+    position: fixed; 
+    bottom: 19.5vh; 
+    right: 5vw; 
+}
+
+
+.cancel_button {
+    width: 25%; 
+    margin: auto; 
+    padding: 7px; 
+    font-size: 1.25em; 
+    font-weight: 800; 
+    text-align: center; 
+    border: 2px solid #2E5F4D; 
+    border-radius: 30px;
+    color: #2E5F4D;
+    position: fixed; 
+    bottom: 14vh; 
+    right: 5vw;
+}
+
+.length_input {
+   width: 90%;  
+}
+
+#tickmarks {
+    width: 96%; 
+    display: flex;
+    flex: 1; 
+}
+
+#tickmarks option {
+    flex: 1;
+}
+
+.title_input {
+    font-size: 1.5em; 
+    padding: 10px;
+    border-radius: 30px; 
+    margin-bottom: 20px; 
+}
+
+.start_time {
+    font-size: 1.3em; 
+    margin-bottom: 5px; 
+}
+
+.time_input {
+    font-size: 2em;
+    padding: 10px; 
+    border-radius: 30px;  
+    margin-bottom: 10px; 
+}
+
+/* auto schedule page */ 
+
+
